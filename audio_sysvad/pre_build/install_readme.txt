@@ -1,0 +1,1 @@
+c:\tools\devcon.exe install tabletaudiosample.inf Root\sysvad_TabletAudioSample
