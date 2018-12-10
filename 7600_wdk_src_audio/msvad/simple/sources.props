@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ImportFilePath_AFA1DA420293461B8F5B4920F0CC5281>..\sources.inc.props</ImportFilePath_AFA1DA420293461B8F5B4920F0CC5281>
+    <ImportFilePath_AFA1DA420293461B8F5B4920F0CC5281 Condition="!$([System.IO.Path]::IsPathRooted('..\sources.inc.props'))">$([System.IO.Path]::Combine($(MSBuildProjectDirectory),'..\sources.inc.props'))</ImportFilePath_AFA1DA420293461B8F5B4920F0CC5281>
+    <AlternateImportFilePath_F08D75FC024D4A4BAC1E1CAD4749B893>$([System.IO.Path]::Combine($(MSBuildThisFileDirectory),'..\sources.inc.props'))</AlternateImportFilePath_F08D75FC024D4A4BAC1E1CAD4749B893>
+  </PropertyGroup>
+  <Import Project="$(ImportFilePath_AFA1DA420293461B8F5B4920F0CC5281)" Condition="Exists($(ImportFilePath_AFA1DA420293461B8F5B4920F0CC5281))" />
+  <Import Project="$(AlternateImportFilePath_F08D75FC024D4A4BAC1E1CAD4749B893)" Condition="!Exists($(ImportFilePath_AFA1DA420293461B8F5B4920F0CC5281))" />
+  <PropertyGroup>
+    <TARGETNAME>vadsimpl</TARGETNAME>
+    <SOURCES>$(SOURCES)               mintopo.cpp              minwave.cpp</SOURCES>
+  </PropertyGroup>
+</Project>
