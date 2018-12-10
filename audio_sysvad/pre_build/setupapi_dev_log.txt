@@ -1,0 +1,1343 @@
+[Device Install Log]
+     OS Version = 10.0.17763
+     Service Pack = 0.0
+     Suite = 0x0100
+     ProductType = 1
+     Architecture = amd64
+
+[BeginLog]
+
+[Boot Session: 2018/12/10 11:07:48.500]
+
+>>>  [Device Install (UpdateDriverForPlugAndPlayDevices) - Root\sysvad_TabletAudioSample]
+>>>  Section start 2018/12/10 12:19:10.910
+      cmd: "C:\tools\devcon.exe" install tabletaudiosample.inf Root\sysvad_TabletAudioSample
+     ndv: INF path: C:\test\x64_debug_package\tabletaudiosample.inf
+     ndv: Install flags: 0x00000001
+     ndv: {Update Device Driver - ROOT\MEDIA\0001}
+     dvi:      Set selected driver complete.
+     ndv:      Search options: 0x00000080
+     ndv:      Searching single INF 'C:\test\x64_debug_package\tabletaudiosample.inf'
+     dvi:      {Build Driver List} 12:19:10.964
+     dvi:           Searching for hardware ID(s):
+     dvi:                root\sysvad_tabletaudiosample
+     dvi:           Processing a single INF: 'c:\test\x64_debug_package\tabletaudiosample.inf'
+     inf:           Opened INF: 'c:\test\x64_debug_package\tabletaudiosample.inf' ([strings])
+     sig:           {_VERIFY_FILE_SIGNATURE} 12:19:11.032
+     sig:                Key      = tabletaudiosample.inf
+     sig:                FilePath = c:\test\x64_debug_package\tabletaudiosample.inf
+     sig:                Catalog  = c:\test\x64_debug_package\sysvad.cat
+!    sig:                Verifying file against specific (valid) catalog failed.
+!    sig:                Error 0x800b0109: A certificate chain processed, but terminated in a root certificate which is not trusted by the trust provider.
+     sig:           {_VERIFY_FILE_SIGNATURE exit(0x800b0109)} 12:19:11.082
+     sig:           {_VERIFY_FILE_SIGNATURE} 12:19:11.090
+     sig:                Key      = tabletaudiosample.inf
+     sig:                FilePath = c:\test\x64_debug_package\tabletaudiosample.inf
+     sig:                Catalog  = c:\test\x64_debug_package\sysvad.cat
+!    sig:                Verifying file against specific Authenticode(tm) catalog failed.
+!    sig:                Error 0x800b0109: A certificate chain processed, but terminated in a root certificate which is not trusted by the trust provider.
+     sig:           {_VERIFY_FILE_SIGNATURE exit(0x800b0109)} 12:19:11.116
+     dvi:           Created Driver Node:
+     dvi:                HardwareID   - Root\sysvad_TabletAudioSample
+     dvi:                InfName      - c:\test\x64_debug_package\tabletaudiosample.inf
+     dvi:                DevDesc      - Virtual Audio Device (WDM) - Tablet Sample
+     dvi:                DrvDesc      - Virtual Audio Device (WDM) - Tablet Sample
+     dvi:                Provider     - TODO-Set-Provider
+     dvi:                Mfg          - TODO-Set-Manufacturer
+     dvi:                ModelsSec    - SYSVAD.NTamd64
+     dvi:                InstallSec   - SYSVAD_SA
+     dvi:                Section      - SYSVAD_SA.NT
+     dvi:                Rank         - 0x80ff0000
+     dvi:                Signer       - Not digitally signed
+     dvi:                Signer Score - Not digitally signed
+     dvi:                DrvDate      - 12/10/2018
+     dvi:                Version      - 11.54.1.636
+     dvi:           Enumerating INFs from path list 'C:\Windows\INF'
+     inf:           Searched 0 potential matches in published INF directory
+     dvi:      {Build Driver List - exit(0x00000000)} 12:19:11.194
+     dvi:      {DIF_SELECTBESTCOMPATDRV} 12:19:11.198
+     dvi:           Using relative path for module 'C:\Windows\system32\mmci.dll'.
+     dvi:           Using exported function 'MediaClassInstaller' in module 'C:\Windows\system32\mmci.dll'.
+     dvi:           Class installer == mmci.dll,MediaClassInstaller
+     dvi:           No CoInstallers found
+     dvi:           Class installer: Enter 12:19:11.222
+     dvi:           Class installer: Exit
+     dvi:           Default installer: Enter 12:19:11.230
+     dvi:                {Select Best Driver}
+     dvi:                     Selected driver installs from section [SYSVAD_SA] in 'c:\test\x64_debug_package\tabletaudiosample.inf'.
+     dvi:                     Class GUID of device remains: {4d36e96c-e325-11ce-bfc1-08002be10318}.
+     dvi:                     Set selected driver complete.
+     dvi:                     Selected Driver:
+     dvi:                          Description - Virtual Audio Device (WDM) - Tablet Sample
+     dvi:                          InfFile     - c:\test\x64_debug_package\tabletaudiosample.inf
+     dvi:                          Section     - SYSVAD_SA
+     dvi:                          Signer      - Not digitally signed
+     dvi:                          Rank        - 0x80ff0000
+     dvi:                {Select Best Driver - exit(0x00000000)}
+     dvi:           Default installer: Exit
+     dvi:      {DIF_SELECTBESTCOMPATDRV - exit(0x00000000)} 12:19:11.296
+     ndv:      Force Installing Driver:
+     ndv:           Inf Name       - tabletaudiosample.inf
+     ndv:           Driver Date    - 12/10/2018
+     ndv:           Driver Version - 11.54.1.636
+     sto:      {Setup Import Driver Package: c:\test\x64_debug_package\tabletaudiosample.inf} 12:19:11.322
+     inf:           Opened INF: 'c:\test\x64_debug_package\tabletaudiosample.inf' ([strings])
+     inf:           Opened INF: 'c:\test\x64_debug_package\tabletaudiosample.inf' ([strings])
+     inf:           Provider: TODO-Set-Provider
+     inf:           Class GUID: {4d36e96c-e325-11ce-bfc1-08002be10318}
+     inf:           Driver Version: 12/10/2018,11.54.1.636
+     inf:           Catalog File: sysvad.cat
+     sto:           {Copy Driver Package: c:\test\x64_debug_package\tabletaudiosample.inf} 12:19:11.368
+     sto:                Driver Package = c:\test\x64_debug_package\tabletaudiosample.inf
+     sto:                Flags          = 0x00000007
+     sto:                Destination    = C:\Users\DTMLLU~1\AppData\Local\Temp\{97b97826-07b1-e145-a2a5-dcf1e20210e3}
+     sto:                Copying driver package files to 'C:\Users\DTMLLU~1\AppData\Local\Temp\{97b97826-07b1-e145-a2a5-dcf1e20210e3}'.
+     inf:                Opened INF: 'c:\test\x64_debug_package\tabletaudiosample.inf' ([strings])
+     inf:                Opened INF: 'C:\Windows\System32\DriverStore\FileRepository\ks.inf_amd64_3ea177e4c57aaa66\ks.inf' ([strings.0409])
+     inf:                Opened INF: 'C:\Windows\System32\DriverStore\FileRepository\wdmaudio.inf_amd64_67df1d1d3003ef46\wdmaudio.inf' ([strings.0409])
+     inf:                Opened INF: 'c:\test\x64_debug_package\tabletaudiosample.inf' ([strings])
+     flq:                {FILE_QUEUE_COPY}
+     flq:                     CopyStyle      - 0x00000000
+     flq:                     SourceRootPath - 'c:\test\x64_debug_package'
+     flq:                     SourceFilename - 'sysvad.cat'
+     flq:                     TargetDirectory- 'C:\Users\DTMLLU~1\AppData\Local\Temp\{97b97826-07b1-e145-a2a5-dcf1e20210e3}'
+     flq:                {FILE_QUEUE_COPY exit(0x00000000)}
+     flq:                {FILE_QUEUE_COPY}
+     flq:                     CopyStyle      - 0x00000000
+     flq:                     SourceRootPath - 'c:\test\x64_debug_package'
+     flq:                     SourceFilename - 'swapapo.dll'
+     flq:                     TargetDirectory- 'C:\Users\DTMLLU~1\AppData\Local\Temp\{97b97826-07b1-e145-a2a5-dcf1e20210e3}'
+     flq:                {FILE_QUEUE_COPY exit(0x00000000)}
+     flq:                {FILE_QUEUE_COPY}
+     flq:                     CopyStyle      - 0x00000000
+     flq:                     SourceRootPath - 'c:\test\x64_debug_package'
+     flq:                     SourceFilename - 'tabletaudiosample.inf'
+     flq:                     TargetDirectory- 'C:\Users\DTMLLU~1\AppData\Local\Temp\{97b97826-07b1-e145-a2a5-dcf1e20210e3}'
+     flq:                {FILE_QUEUE_COPY exit(0x00000000)}
+     flq:                {FILE_QUEUE_COPY}
+     flq:                     CopyStyle      - 0x00000000
+     flq:                     SourceRootPath - 'c:\test\x64_debug_package'
+     flq:                     SourceFilename - 'tabletaudiosample.sys'
+     flq:                     TargetDirectory- 'C:\Users\DTMLLU~1\AppData\Local\Temp\{97b97826-07b1-e145-a2a5-dcf1e20210e3}'
+     flq:                {FILE_QUEUE_COPY exit(0x00000000)}
+     flq:                {FILE_QUEUE_COPY}
+     flq:                     CopyStyle      - 0x00000000
+     flq:                     SourceRootPath - 'c:\test\x64_debug_package'
+     flq:                     SourceFilename - 'delayapo.dll'
+     flq:                     TargetDirectory- 'C:\Users\DTMLLU~1\AppData\Local\Temp\{97b97826-07b1-e145-a2a5-dcf1e20210e3}'
+     flq:                {FILE_QUEUE_COPY exit(0x00000000)}
+     flq:                {FILE_QUEUE_COPY}
+     flq:                     CopyStyle      - 0x00000000
+     flq:                     SourceRootPath - 'c:\test\x64_debug_package'
+     flq:                     SourceFilename - 'keyworddetectorcontosoadapter.dll'
+     flq:                     TargetDirectory- 'C:\Users\DTMLLU~1\AppData\Local\Temp\{97b97826-07b1-e145-a2a5-dcf1e20210e3}'
+     flq:                {FILE_QUEUE_COPY exit(0x00000000)}
+     flq:                {FILE_QUEUE_COMMIT} 12:19:11.604
+     flq:                     {FILE_QUEUE_COMMIT_COPY_SUBQUEUE}
+     flq:                          Source Media:
+     flq:                               SourcePath   - [c:\test\x64_debug_package]
+     flq:                               SourceFile   - [sysvad.cat]
+     flq:                               Flags        - 0x00000000
+     flq:                          {FILE_QUEUE_COMMIT_COPY_FILE}
+     flq:                               Copying 'c:\test\x64_debug_package\sysvad.cat' to 'C:\Users\DTMLLU~1\AppData\Local\Temp\{97b97826-07b1-e145-a2a5-dcf1e20210e3}\sysvad.cat'.
+     flq:                               CopyFile: 'c:\test\x64_debug_package\sysvad.cat' to 'C:\Users\DTMLLU~1\AppData\Local\Temp\{97b97826-07b1-e145-a2a5-dcf1e20210e3}\SET5F88.tmp'
+     flq:                               MoveFile: 'C:\Users\DTMLLU~1\AppData\Local\Temp\{97b97826-07b1-e145-a2a5-dcf1e20210e3}\SET5F88.tmp' to 'C:\Users\DTMLLU~1\AppData\Local\Temp\{97b97826-07b1-e145-a2a5-dcf1e20210e3}\sysvad.cat'
+     flq:                          {FILE_QUEUE_COMMIT_COPY_FILE exit OK}
+     flq:                          {FILE_QUEUE_COMMIT_COPY_FILE}
+     flq:                               Copying 'c:\test\x64_debug_package\swapapo.dll' to 'C:\Users\DTMLLU~1\AppData\Local\Temp\{97b97826-07b1-e145-a2a5-dcf1e20210e3}\swapapo.dll'.
+     flq:                               CopyFile: 'c:\test\x64_debug_package\swapapo.dll' to 'C:\Users\DTMLLU~1\AppData\Local\Temp\{97b97826-07b1-e145-a2a5-dcf1e20210e3}\SET5FC8.tmp'
+     flq:                               MoveFile: 'C:\Users\DTMLLU~1\AppData\Local\Temp\{97b97826-07b1-e145-a2a5-dcf1e20210e3}\SET5FC8.tmp' to 'C:\Users\DTMLLU~1\AppData\Local\Temp\{97b97826-07b1-e145-a2a5-dcf1e20210e3}\swapapo.dll'
+     flq:                          {FILE_QUEUE_COMMIT_COPY_FILE exit OK}
+     flq:                          {FILE_QUEUE_COMMIT_COPY_FILE}
+     flq:                               Copying 'c:\test\x64_debug_package\tabletaudiosample.inf' to 'C:\Users\DTMLLU~1\AppData\Local\Temp\{97b97826-07b1-e145-a2a5-dcf1e20210e3}\tabletaudiosample.inf'.
+     flq:                               CopyFile: 'c:\test\x64_debug_package\tabletaudiosample.inf' to 'C:\Users\DTMLLU~1\AppData\Local\Temp\{97b97826-07b1-e145-a2a5-dcf1e20210e3}\SET5FE8.tmp'
+     flq:                               MoveFile: 'C:\Users\DTMLLU~1\AppData\Local\Temp\{97b97826-07b1-e145-a2a5-dcf1e20210e3}\SET5FE8.tmp' to 'C:\Users\DTMLLU~1\AppData\Local\Temp\{97b97826-07b1-e145-a2a5-dcf1e20210e3}\tabletaudiosample.inf'
+     flq:                          {FILE_QUEUE_COMMIT_COPY_FILE exit OK}
+     flq:                          {FILE_QUEUE_COMMIT_COPY_FILE}
+     flq:                               Copying 'c:\test\x64_debug_package\tabletaudiosample.sys' to 'C:\Users\DTMLLU~1\AppData\Local\Temp\{97b97826-07b1-e145-a2a5-dcf1e20210e3}\tabletaudiosample.sys'.
+     flq:                               CopyFile: 'c:\test\x64_debug_package\tabletaudiosample.sys' to 'C:\Users\DTMLLU~1\AppData\Local\Temp\{97b97826-07b1-e145-a2a5-dcf1e20210e3}\SET6008.tmp'
+     flq:                               MoveFile: 'C:\Users\DTMLLU~1\AppData\Local\Temp\{97b97826-07b1-e145-a2a5-dcf1e20210e3}\SET6008.tmp' to 'C:\Users\DTMLLU~1\AppData\Local\Temp\{97b97826-07b1-e145-a2a5-dcf1e20210e3}\tabletaudiosample.sys'
+     flq:                          {FILE_QUEUE_COMMIT_COPY_FILE exit OK}
+     flq:                          {FILE_QUEUE_COMMIT_COPY_FILE}
+     flq:                               Copying 'c:\test\x64_debug_package\delayapo.dll' to 'C:\Users\DTMLLU~1\AppData\Local\Temp\{97b97826-07b1-e145-a2a5-dcf1e20210e3}\delayapo.dll'.
+     flq:                               CopyFile: 'c:\test\x64_debug_package\delayapo.dll' to 'C:\Users\DTMLLU~1\AppData\Local\Temp\{97b97826-07b1-e145-a2a5-dcf1e20210e3}\SET6038.tmp'
+     flq:                               MoveFile: 'C:\Users\DTMLLU~1\AppData\Local\Temp\{97b97826-07b1-e145-a2a5-dcf1e20210e3}\SET6038.tmp' to 'C:\Users\DTMLLU~1\AppData\Local\Temp\{97b97826-07b1-e145-a2a5-dcf1e20210e3}\delayapo.dll'
+     flq:                          {FILE_QUEUE_COMMIT_COPY_FILE exit OK}
+     flq:                          {FILE_QUEUE_COMMIT_COPY_FILE}
+     flq:                               Copying 'c:\test\x64_debug_package\keyworddetectorcontosoadapter.dll' to 'C:\Users\DTMLLU~1\AppData\Local\Temp\{97b97826-07b1-e145-a2a5-dcf1e20210e3}\keyworddetectorcontosoadapter.dll'.
+     flq:                               CopyFile: 'c:\test\x64_debug_package\keyworddetectorcontosoadapter.dll' to 'C:\Users\DTMLLU~1\AppData\Local\Temp\{97b97826-07b1-e145-a2a5-dcf1e20210e3}\SET6068.tmp'
+     flq:                               MoveFile: 'C:\Users\DTMLLU~1\AppData\Local\Temp\{97b97826-07b1-e145-a2a5-dcf1e20210e3}\SET6068.tmp' to 'C:\Users\DTMLLU~1\AppData\Local\Temp\{97b97826-07b1-e145-a2a5-dcf1e20210e3}\keyworddetectorcontosoadapter.dll'
+     flq:                          {FILE_QUEUE_COMMIT_COPY_FILE exit OK}
+     flq:                     {FILE_QUEUE_COMMIT_COPY_SUBQUEUE exit OK}
+     flq:                {FILE_QUEUE_COMMIT exit OK} 12:19:11.874
+     sto:                Copied driver package. Time = 500 ms
+     sto:           {Copy Driver Package: exit(0x00000000)} 12:19:11.884
+     pol:           {Driver package policy check} 12:19:11.952
+     pol:           {Driver package policy check - exit(0x00000000)} 12:19:11.954
+     sto:           {Stage Driver Package: C:\Users\DTMLLU~1\AppData\Local\Temp\{97b97826-07b1-e145-a2a5-dcf1e20210e3}\tabletaudiosample.inf} 12:19:11.956
+     inf:                Opened INF: 'C:\Users\DTMLLU~1\AppData\Local\Temp\{97b97826-07b1-e145-a2a5-dcf1e20210e3}\tabletaudiosample.inf' ([strings])
+     inf:                Opened INF: 'C:\Windows\System32\DriverStore\FileRepository\ks.inf_amd64_3ea177e4c57aaa66\ks.inf' ([strings.0409])
+     inf:                Opened INF: 'C:\Windows\System32\DriverStore\FileRepository\wdmaudio.inf_amd64_67df1d1d3003ef46\wdmaudio.inf' ([strings.0409])
+     inf:                Opened INF: 'C:\Users\DTMLLU~1\AppData\Local\Temp\{97b97826-07b1-e145-a2a5-dcf1e20210e3}\tabletaudiosample.inf' ([strings])
+     inf:                Opened INF: 'C:\Users\DTMLLU~1\AppData\Local\Temp\{97b97826-07b1-e145-a2a5-dcf1e20210e3}\tabletaudiosample.inf' ([strings])
+     inf:                {Query Configurability: C:\Users\DTMLLU~1\AppData\Local\Temp\{97b97826-07b1-e145-a2a5-dcf1e20210e3}\tabletaudiosample.inf} 12:19:11.990
+     inf:                     Opened INF: 'C:\Users\DTMLLU~1\AppData\Local\Temp\{97b97826-07b1-e145-a2a5-dcf1e20210e3}\tabletaudiosample.inf' ([strings])
+     inf:                     Opened INF: 'C:\Windows\System32\DriverStore\FileRepository\ks.inf_amd64_3ea177e4c57aaa66\ks.inf' ([strings.0409])
+     inf:                     Opened INF: 'C:\Windows\System32\DriverStore\FileRepository\wdmaudio.inf_amd64_67df1d1d3003ef46\wdmaudio.inf' ([strings.0409])
+     inf:                     Driver package uses WDF.
+     inf:                     Driver package 'tabletaudiosample.inf' is configurable.
+     inf:                {Query Configurability: exit(0x00000000)} 12:19:12.014
+     sto:                Copying driver package files:
+     sto:                     Source Path      = C:\Users\DTMLLU~1\AppData\Local\Temp\{97b97826-07b1-e145-a2a5-dcf1e20210e3}
+     sto:                     Destination Path = C:\Windows\System32\DriverStore\Temp\{86dcc13a-482d-0747-be1d-103a98c3735c}
+     flq:                {FILE_QUEUE_COPY}
+     flq:                     CopyStyle      - 0x00000010
+     flq:                     SourceRootPath - 'C:\Users\DTMLLU~1\AppData\Local\Temp\{97b97826-07b1-e145-a2a5-dcf1e20210e3}'
+     flq:                     SourceFilename - 'sysvad.cat'
+     flq:                     TargetDirectory- 'C:\Windows\System32\DriverStore\Temp\{86dcc13a-482d-0747-be1d-103a98c3735c}'
+     flq:                {FILE_QUEUE_COPY exit(0x00000000)}
+     flq:                {FILE_QUEUE_COPY}
+     flq:                     CopyStyle      - 0x00000010
+     flq:                     SourceRootPath - 'C:\Users\DTMLLU~1\AppData\Local\Temp\{97b97826-07b1-e145-a2a5-dcf1e20210e3}'
+     flq:                     SourceFilename - 'swapapo.dll'
+     flq:                     TargetDirectory- 'C:\Windows\System32\DriverStore\Temp\{86dcc13a-482d-0747-be1d-103a98c3735c}'
+     flq:                {FILE_QUEUE_COPY exit(0x00000000)}
+     flq:                {FILE_QUEUE_COPY}
+     flq:                     CopyStyle      - 0x00000010
+     flq:                     SourceRootPath - 'C:\Users\DTMLLU~1\AppData\Local\Temp\{97b97826-07b1-e145-a2a5-dcf1e20210e3}'
+     flq:                     SourceFilename - 'tabletaudiosample.inf'
+     flq:                     TargetDirectory- 'C:\Windows\System32\DriverStore\Temp\{86dcc13a-482d-0747-be1d-103a98c3735c}'
+     flq:                {FILE_QUEUE_COPY exit(0x00000000)}
+     flq:                {FILE_QUEUE_COPY}
+     flq:                     CopyStyle      - 0x00000010
+     flq:                     SourceRootPath - 'C:\Users\DTMLLU~1\AppData\Local\Temp\{97b97826-07b1-e145-a2a5-dcf1e20210e3}'
+     flq:                     SourceFilename - 'tabletaudiosample.sys'
+     flq:                     TargetDirectory- 'C:\Windows\System32\DriverStore\Temp\{86dcc13a-482d-0747-be1d-103a98c3735c}'
+     flq:                {FILE_QUEUE_COPY exit(0x00000000)}
+     flq:                {FILE_QUEUE_COPY}
+     flq:                     CopyStyle      - 0x00000010
+     flq:                     SourceRootPath - 'C:\Users\DTMLLU~1\AppData\Local\Temp\{97b97826-07b1-e145-a2a5-dcf1e20210e3}'
+     flq:                     SourceFilename - 'delayapo.dll'
+     flq:                     TargetDirectory- 'C:\Windows\System32\DriverStore\Temp\{86dcc13a-482d-0747-be1d-103a98c3735c}'
+     flq:                {FILE_QUEUE_COPY exit(0x00000000)}
+     flq:                {FILE_QUEUE_COPY}
+     flq:                     CopyStyle      - 0x00000010
+     flq:                     SourceRootPath - 'C:\Users\DTMLLU~1\AppData\Local\Temp\{97b97826-07b1-e145-a2a5-dcf1e20210e3}'
+     flq:                     SourceFilename - 'keyworddetectorcontosoadapter.dll'
+     flq:                     TargetDirectory- 'C:\Windows\System32\DriverStore\Temp\{86dcc13a-482d-0747-be1d-103a98c3735c}'
+     flq:                {FILE_QUEUE_COPY exit(0x00000000)}
+     flq:                {FILE_QUEUE_COMMIT} 12:19:12.076
+     flq:                     {FILE_QUEUE_COMMIT_COPY_SUBQUEUE}
+     flq:                          Source Media:
+     flq:                               SourcePath   - [C:\Users\DTMLLU~1\AppData\Local\Temp\{97b97826-07b1-e145-a2a5-dcf1e20210e3}]
+     flq:                               SourceFile   - [sysvad.cat]
+     flq:                               Flags        - 0x00000000
+     flq:                          {FILE_QUEUE_COMMIT_COPY_FILE}
+     flq:                               Copying 'C:\Users\DTMLLU~1\AppData\Local\Temp\{97b97826-07b1-e145-a2a5-dcf1e20210e3}\sysvad.cat' to 'C:\Windows\System32\DriverStore\Temp\{86dcc13a-482d-0747-be1d-103a98c3735c}\sysvad.cat'.
+     flq:                               CopyFile: 'C:\Users\DTMLLU~1\AppData\Local\Temp\{97b97826-07b1-e145-a2a5-dcf1e20210e3}\sysvad.cat' to 'C:\Windows\System32\DriverStore\Temp\{86dcc13a-482d-0747-be1d-103a98c3735c}\SET615D.tmp'
+     flq:                               MoveFile: 'C:\Windows\System32\DriverStore\Temp\{86dcc13a-482d-0747-be1d-103a98c3735c}\SET615D.tmp' to 'C:\Windows\System32\DriverStore\Temp\{86dcc13a-482d-0747-be1d-103a98c3735c}\sysvad.cat'
+     flq:                          {FILE_QUEUE_COMMIT_COPY_FILE exit OK}
+     flq:                          {FILE_QUEUE_COMMIT_COPY_FILE}
+     flq:                               Copying 'C:\Users\DTMLLU~1\AppData\Local\Temp\{97b97826-07b1-e145-a2a5-dcf1e20210e3}\swapapo.dll' to 'C:\Windows\System32\DriverStore\Temp\{86dcc13a-482d-0747-be1d-103a98c3735c}\swapapo.dll'.
+     flq:                               CopyFile: 'C:\Users\DTMLLU~1\AppData\Local\Temp\{97b97826-07b1-e145-a2a5-dcf1e20210e3}\swapapo.dll' to 'C:\Windows\System32\DriverStore\Temp\{86dcc13a-482d-0747-be1d-103a98c3735c}\SET617D.tmp'
+     flq:                               MoveFile: 'C:\Windows\System32\DriverStore\Temp\{86dcc13a-482d-0747-be1d-103a98c3735c}\SET617D.tmp' to 'C:\Windows\System32\DriverStore\Temp\{86dcc13a-482d-0747-be1d-103a98c3735c}\swapapo.dll'
+     flq:                          {FILE_QUEUE_COMMIT_COPY_FILE exit OK}
+     flq:                          {FILE_QUEUE_COMMIT_COPY_FILE}
+     flq:                               Copying 'C:\Users\DTMLLU~1\AppData\Local\Temp\{97b97826-07b1-e145-a2a5-dcf1e20210e3}\tabletaudiosample.inf' to 'C:\Windows\System32\DriverStore\Temp\{86dcc13a-482d-0747-be1d-103a98c3735c}\tabletaudiosample.inf'.
+     flq:                               CopyFile: 'C:\Users\DTMLLU~1\AppData\Local\Temp\{97b97826-07b1-e145-a2a5-dcf1e20210e3}\tabletaudiosample.inf' to 'C:\Windows\System32\DriverStore\Temp\{86dcc13a-482d-0747-be1d-103a98c3735c}\SET617E.tmp'
+     flq:                               MoveFile: 'C:\Windows\System32\DriverStore\Temp\{86dcc13a-482d-0747-be1d-103a98c3735c}\SET617E.tmp' to 'C:\Windows\System32\DriverStore\Temp\{86dcc13a-482d-0747-be1d-103a98c3735c}\tabletaudiosample.inf'
+     flq:                          {FILE_QUEUE_COMMIT_COPY_FILE exit OK}
+     flq:                          {FILE_QUEUE_COMMIT_COPY_FILE}
+     flq:                               Copying 'C:\Users\DTMLLU~1\AppData\Local\Temp\{97b97826-07b1-e145-a2a5-dcf1e20210e3}\tabletaudiosample.sys' to 'C:\Windows\System32\DriverStore\Temp\{86dcc13a-482d-0747-be1d-103a98c3735c}\tabletaudiosample.sys'.
+     flq:                               CopyFile: 'C:\Users\DTMLLU~1\AppData\Local\Temp\{97b97826-07b1-e145-a2a5-dcf1e20210e3}\tabletaudiosample.sys' to 'C:\Windows\System32\DriverStore\Temp\{86dcc13a-482d-0747-be1d-103a98c3735c}\SET619F.tmp'
+     flq:                               MoveFile: 'C:\Windows\System32\DriverStore\Temp\{86dcc13a-482d-0747-be1d-103a98c3735c}\SET619F.tmp' to 'C:\Windows\System32\DriverStore\Temp\{86dcc13a-482d-0747-be1d-103a98c3735c}\tabletaudiosample.sys'
+     flq:                          {FILE_QUEUE_COMMIT_COPY_FILE exit OK}
+     flq:                          {FILE_QUEUE_COMMIT_COPY_FILE}
+     flq:                               Copying 'C:\Users\DTMLLU~1\AppData\Local\Temp\{97b97826-07b1-e145-a2a5-dcf1e20210e3}\delayapo.dll' to 'C:\Windows\System32\DriverStore\Temp\{86dcc13a-482d-0747-be1d-103a98c3735c}\delayapo.dll'.
+     flq:                               CopyFile: 'C:\Users\DTMLLU~1\AppData\Local\Temp\{97b97826-07b1-e145-a2a5-dcf1e20210e3}\delayapo.dll' to 'C:\Windows\System32\DriverStore\Temp\{86dcc13a-482d-0747-be1d-103a98c3735c}\SET61AF.tmp'
+     flq:                               MoveFile: 'C:\Windows\System32\DriverStore\Temp\{86dcc13a-482d-0747-be1d-103a98c3735c}\SET61AF.tmp' to 'C:\Windows\System32\DriverStore\Temp\{86dcc13a-482d-0747-be1d-103a98c3735c}\delayapo.dll'
+     flq:                          {FILE_QUEUE_COMMIT_COPY_FILE exit OK}
+     flq:                          {FILE_QUEUE_COMMIT_COPY_FILE}
+     flq:                               Copying 'C:\Users\DTMLLU~1\AppData\Local\Temp\{97b97826-07b1-e145-a2a5-dcf1e20210e3}\keyworddetectorcontosoadapter.dll' to 'C:\Windows\System32\DriverStore\Temp\{86dcc13a-482d-0747-be1d-103a98c3735c}\keyworddetectorcontosoadapter.dll'.
+     flq:                               CopyFile: 'C:\Users\DTMLLU~1\AppData\Local\Temp\{97b97826-07b1-e145-a2a5-dcf1e20210e3}\keyworddetectorcontosoadapter.dll' to 'C:\Windows\System32\DriverStore\Temp\{86dcc13a-482d-0747-be1d-103a98c3735c}\SET61D0.tmp'
+     flq:                               MoveFile: 'C:\Windows\System32\DriverStore\Temp\{86dcc13a-482d-0747-be1d-103a98c3735c}\SET61D0.tmp' to 'C:\Windows\System32\DriverStore\Temp\{86dcc13a-482d-0747-be1d-103a98c3735c}\keyworddetectorcontosoadapter.dll'
+     flq:                          {FILE_QUEUE_COMMIT_COPY_FILE exit OK}
+     flq:                     {FILE_QUEUE_COMMIT_COPY_SUBQUEUE exit OK}
+     flq:                {FILE_QUEUE_COMMIT exit OK} 12:19:12.216
+     sto:                {DRIVERSTORE IMPORT VALIDATE} 12:19:12.220
+     inf:                     Opened INF: 'C:\Windows\System32\DriverStore\Temp\{86dcc13a-482d-0747-be1d-103a98c3735c}\tabletaudiosample.inf' ([strings])
+     sig:                     {_VERIFY_FILE_SIGNATURE} 12:19:12.250
+     sig:                          Key      = tabletaudiosample.inf
+     sig:                          FilePath = C:\Windows\System32\DriverStore\Temp\{86dcc13a-482d-0747-be1d-103a98c3735c}\tabletaudiosample.inf
+     sig:                          Catalog  = C:\Windows\System32\DriverStore\Temp\{86dcc13a-482d-0747-be1d-103a98c3735c}\sysvad.cat
+!    sig:                          Verifying file against specific (valid) catalog failed.
+!    sig:                          Error 0x800b0109: A certificate chain processed, but terminated in a root certificate which is not trusted by the trust provider.
+     sig:                     {_VERIFY_FILE_SIGNATURE exit(0x800b0109)} 12:19:12.262
+     sig:                     {_VERIFY_FILE_SIGNATURE} 12:19:12.264
+     sig:                          Key      = tabletaudiosample.inf
+     sig:                          FilePath = C:\Windows\System32\DriverStore\Temp\{86dcc13a-482d-0747-be1d-103a98c3735c}\tabletaudiosample.inf
+     sig:                          Catalog  = C:\Windows\System32\DriverStore\Temp\{86dcc13a-482d-0747-be1d-103a98c3735c}\sysvad.cat
+!    sig:                          Verifying file against specific Authenticode(tm) catalog failed.
+!    sig:                          Error 0x800b0109: A certificate chain processed, but terminated in a root certificate which is not trusted by the trust provider.
+     sig:                     {_VERIFY_FILE_SIGNATURE exit(0x800b0109)} 12:19:12.274
+     sig:                     Code Integrity State: Test Signing
+     inf:                     Opened INF: 'C:\Windows\System32\DriverStore\Temp\{86dcc13a-482d-0747-be1d-103a98c3735c}\tabletaudiosample.inf' ([strings])
+!    sig:                     Driver package catalog file certificate does not belong to Trusted Root Certificates, but user wants to install anyway.
+     sto:                {DRIVERSTORE IMPORT VALIDATE: exit(0x00000000)} 12:19:14.816
+     sig:                Signer Score  = 0x80000000 (Unsigned)
+     inf:                Opened INF: 'C:\Windows\System32\DriverStore\Temp\{86dcc13a-482d-0747-be1d-103a98c3735c}\tabletaudiosample.inf' ([strings])
+     sto:                {DRIVERSTORE IMPORT BEGIN} 12:19:14.824
+     inf:                     Opened INF: 'C:\Windows\System32\DriverStore\Temp\{86dcc13a-482d-0747-be1d-103a98c3735c}\tabletaudiosample.inf' ([strings])
+     bak:                     Create system restore point:
+     bak:                          Description = Device Driver Package Install: TODO-Set-Provider Sound, video and game controllers
+     bak:                          Time        = 15ms
+     bak:                          Status      = 0x00000422 (FAILURE)
+     sto:                {DRIVERSTORE IMPORT BEGIN: exit(0x00000000)} 12:19:14.852
+     sto:                Importing driver package files:
+     sto:                     Source Path      = C:\Windows\System32\DriverStore\Temp\{86dcc13a-482d-0747-be1d-103a98c3735c}
+     sto:                     Destination Path = C:\Windows\System32\DriverStore\FileRepository\tabletaudiosample.inf_amd64_bdc98f98d2ea6667
+     cpy:                {Copy Directory: C:\Windows\System32\DriverStore\Temp\{86dcc13a-482d-0747-be1d-103a98c3735c}} 12:19:14.858
+     cpy:                     Target Path = C:\Windows\System32\DriverStore\FileRepository\tabletaudiosample.inf_amd64_bdc98f98d2ea6667
+     cpy:                {Copy Directory: exit(0x00000000)} 12:19:14.868
+     idb:                {Register Driver Package: C:\Windows\System32\DriverStore\FileRepository\tabletaudiosample.inf_amd64_bdc98f98d2ea6667\tabletaudiosample.inf} 12:19:14.872
+     inf:                     Opened INF: 'C:\Windows\System32\DriverStore\FileRepository\tabletaudiosample.inf_amd64_bdc98f98d2ea6667\tabletaudiosample.inf' ([strings])
+     idb:                     Created driver package object 'tabletaudiosample.inf_amd64_bdc98f98d2ea6667' in DRIVERS database node.
+     idb:                     Created driver INF file object 'oem18.inf' in DRIVERS database node.
+     idb:                     Registered driver package 'tabletaudiosample.inf_amd64_bdc98f98d2ea6667' with 'oem18.inf'.
+     idb:                {Register Driver Package: exit(0x00000000)} 12:19:14.884
+     idb:                {Publish Driver Package: C:\Windows\System32\DriverStore\FileRepository\tabletaudiosample.inf_amd64_bdc98f98d2ea6667\tabletaudiosample.inf} 12:19:14.886
+     idb:                     Opened driver package object 'tabletaudiosample.inf_amd64_bdc98f98d2ea6667' in DRIVERS database node.
+     idb:                     Opened driver INF file object 'oem18.inf' in DRIVERS database node.
+     idb:                     Activating driver package 'tabletaudiosample.inf_amd64_bdc98f98d2ea6667'.
+     cpy:                     Published 'tabletaudiosample.inf_amd64_bdc98f98d2ea6667\tabletaudiosample.inf' to 'oem18.inf'.
+     inf:                     Opened INF: 'C:\Windows\System32\DriverStore\FileRepository\tabletaudiosample.inf_amd64_bdc98f98d2ea6667\tabletaudiosample.inf' ([strings])
+     idb:                     Indexed 2 device IDs for 'tabletaudiosample.inf_amd64_bdc98f98d2ea6667'.
+     sto:                     Flushed driver database node 'DRIVERS'. Time = 31 ms
+     sto:                     Flushed driver database node 'SYSTEM'. Time = 0 ms
+     idb:                {Publish Driver Package: exit(0x00000000)} 12:19:14.944
+     sto:                Setting catalog hint 'oem18.cat' on driver files.
+     sto:                Catalog hint set on driver file 'C:\Windows\System32\DriverStore\FileRepository\tabletaudiosample.inf_amd64_bdc98f98d2ea6667\swapapo.dll'.
+     sto:                Catalog hint set on driver file 'C:\Windows\System32\DriverStore\FileRepository\tabletaudiosample.inf_amd64_bdc98f98d2ea6667\tabletaudiosample.sys'.
+     sto:                Catalog hint set on driver file 'C:\Windows\System32\DriverStore\FileRepository\tabletaudiosample.inf_amd64_bdc98f98d2ea6667\delayapo.dll'.
+     sto:                Catalog hint set on driver file 'C:\Windows\System32\DriverStore\FileRepository\tabletaudiosample.inf_amd64_bdc98f98d2ea6667\keyworddetectorcontosoadapter.dll'.
+     sto:                {DRIVERSTORE IMPORT END} 12:19:14.960
+     dvi:                     Flushing C:\Windows\System32\DriverStore\FileRepository\tabletaudiosample.inf_amd64_bdc98f98d2ea6667\swapapo.dll to disk.
+     dvi:                     Flushing C:\Windows\System32\DriverStore\FileRepository\tabletaudiosample.inf_amd64_bdc98f98d2ea6667\tabletaudiosample.sys to disk.
+     dvi:                     Flushing C:\Windows\System32\DriverStore\FileRepository\tabletaudiosample.inf_amd64_bdc98f98d2ea6667\delayapo.dll to disk.
+     dvi:                     Flushing C:\Windows\System32\DriverStore\FileRepository\tabletaudiosample.inf_amd64_bdc98f98d2ea6667\keyworddetectorcontosoadapter.dll to disk.
+     dvi:                     Flushing C:\Windows\System32\DriverStore\FileRepository\tabletaudiosample.inf_amd64_bdc98f98d2ea6667\sysvad.cat to disk.
+     dvi:                     Flushing C:\Windows\inf\oem18.inf to disk.
+     dvi:                     Flushing C:\Windows\System32\DriverStore\FileRepository\tabletaudiosample.inf_amd64_bdc98f98d2ea6667\tabletaudiosample.inf to disk.
+     dvi:                     Flushed all driver package files to disk. Time = 31 ms
+     sig:                     Installed catalog 'sysvad.cat' as 'oem18.cat'.
+     inf:                     Opened INF: 'C:\Windows\System32\DriverStore\FileRepository\tabletaudiosample.inf_amd64_bdc98f98d2ea6667\tabletaudiosample.inf' ([strings])
+     bak:                     No system restore point was set earlier.
+     sto:                {DRIVERSTORE IMPORT END: exit(0x00000000)} 12:19:15.036
+     sto:           {Stage Driver Package: exit(0x00000000)} 12:19:15.040
+     dvi:           Doing device matching lookup
+     sto:      {Setup Import Driver Package - exit (0x00000000)} 12:19:15.066
+     inf:      Opened INF: 'c:\test\x64_debug_package\tabletaudiosample.inf' ([strings])
+     dvi:      Searching for hardware ID(s):
+     dvi:           root\sysvad_tabletaudiosample
+     inf:      Opened INF: 'C:\Windows\System32\DriverStore\FileRepository\tabletaudiosample.inf_amd64_bdc98f98d2ea6667\tabletaudiosample.inf' ([strings])
+     dvi:      Enumerating INFs from path list 'C:\Windows\INF'
+     inf:      Searched 1 potential matches in published INF directory
+     dvi:      Selected driver installs from section [SYSVAD_SA] in 'c:\windows\system32\driverstore\filerepository\tabletaudiosample.inf_amd64_bdc98f98d2ea6667\tabletaudiosample.inf'.
+     dvi:      Class GUID of device remains: {4d36e96c-e325-11ce-bfc1-08002be10318}.
+     dvi:      Set selected driver complete.
+     ndv:      Driver Node Name: tabletaudiosample.inf:ed86ca111a0c57ac:SYSVAD_SA:11.54.1.636:root\sysvad_tabletaudiosample,
+     dvi:      {Plug and Play Service: Device Install for ROOT\MEDIA\0001}
+     ump:           Creating Install Process: DrvInst.exe 12:19:15.132
+     dvi:           Driver INF Path: C:\Windows\INF\oem18.inf
+     dvi:           Driver Node Name: tabletaudiosample.inf:ed86ca111a0c57ac:SYSVAD_SA:11.54.1.636:root\sysvad_tabletaudiosample,
+     dvi:           Driver Store Path: C:\Windows\System32\DriverStore\FileRepository\tabletaudiosample.inf_amd64_bdc98f98d2ea6667\tabletaudiosample.inf
+     dvi:           Building driver list from driver node strong name...
+     dvi:           Searching for hardware ID(s):
+     dvi:                root\sysvad_tabletaudiosample
+     inf:           Opened INF: 'C:\Windows\System32\DriverStore\FileRepository\tabletaudiosample.inf_amd64_bdc98f98d2ea6667\tabletaudiosample.inf' ([strings])
+     inf:           Saved PNF: 'C:\Windows\System32\DriverStore\FileRepository\tabletaudiosample.inf_amd64_bdc98f98d2ea6667\tabletaudiosample.PNF' (Language = 0409)
+     dvi:           Enumerating INFs from path list 'C:\Windows\INF'
+     inf:           Searched 1 potential matches in published INF directory
+     dvi:           Selected driver installs from section [SYSVAD_SA] in 'c:\windows\system32\driverstore\filerepository\tabletaudiosample.inf_amd64_bdc98f98d2ea6667\tabletaudiosample.inf'.
+     dvi:           Class GUID of device changed to: {4d36e96c-e325-11ce-bfc1-08002be10318}.
+     dvi:           Set selected driver complete.
+     dvi:           {Core Device Install} 12:19:15.182
+     dvi:                {Install Device - ROOT\MEDIA\0001} 12:19:15.186
+     dvi:                     Device Status: 0x01802001, Problem: 0x0 (0x00000000)
+     dvi:                     Parent device: HTREE\ROOT\0
+     inf:                     Opened INF: 'C:\Windows\INF\oem18.inf' ([strings])
+     inf:                     Saved PNF: 'C:\Windows\INF\oem18.PNF' (Language = 0409)
+     dvi:                     {Configure Device - ROOT\MEDIA\0001} 12:19:15.202
+     dvi:                          Device Status: 0x01802001, Problem: 0x0 (0x00000000)
+     dvi:                          Parent device: HTREE\ROOT\0
+!    dvi:                          Device class {4d36e96c-e325-11ce-bfc1-08002be10318} is not configurable.
+     dvi:                     {Configure Device - exit(0x00000032)} 12:19:15.210
+     dvi:                     Selected driver cannot be configured, performing standard device installation.
+     dvi:                     {DIF_ALLOW_INSTALL} 12:19:15.214
+     dvi:                          Using relative path for module 'C:\Windows\system32\mmci.dll'.
+     dvi:                          Using exported function 'MediaClassInstaller' in module 'C:\Windows\system32\mmci.dll'.
+     dvi:                          Class installer == mmci.dll,MediaClassInstaller
+     inf:                          Opened PNF: 'c:\windows\system32\driverstore\filerepository\tabletaudiosample.inf_amd64_bdc98f98d2ea6667\tabletaudiosample.inf' ([strings])
+     dvi:                          No CoInstallers found
+     dvi:                          Class installer: Enter 12:19:15.226
+     dvi:                          Class installer: Exit
+     dvi:                          Default installer: Enter 12:19:15.228
+     dvi:                          Default installer: Exit
+     dvi:                     {DIF_ALLOW_INSTALL - exit(0xe000020e)} 12:19:15.232
+     dvi:                     {DIF_INSTALLDEVICEFILES} 12:19:15.236
+     dvi:                          Class installer: Enter 12:19:15.238
+     dvi:                          Class installer: Exit
+     dvi:                          Default installer: Enter 12:19:15.240
+     dvi:                               {Install FILES}
+     inf:                                    Opened PNF: 'c:\windows\system32\driverstore\filerepository\tabletaudiosample.inf_amd64_bdc98f98d2ea6667\tabletaudiosample.inf' ([strings])
+     inf:                                    Opened PNF: 'C:\Windows\INF\ks.inf' ([strings.0409])
+     dvi:                                    Included ks.inf under [SYSVAD_SA.NT].
+     inf:                                    Opened PNF: 'C:\Windows\INF\wdmaudio.inf' ([strings.0409])
+     dvi:                                    Included wdmaudio.inf under [SYSVAD_SA.NT].
+     dvi:                                    Needs [KS.Registration] under [SYSVAD_SA.NT].
+     dvi:                                    Needs [WDMAUDIO.Registration] under [SYSVAD_SA.NT].
+     dvi:                                    Needs [MsApoFxProxy.Registration] under [SYSVAD_SA.NT].
+     inf:                                    {Install Inf Section [SYSVAD_SA.NT]}
+     inf:                                         CopyFiles=SYSVAD_SA.CopyList,SWAPAPO.CopyList,KEYWORDDETECTORCONTOSOADAPTER.CopyList  (tabletaudiosample.inf line 441)
+     cpy:                                         Open PnpLockdownPolicy: Err=2. This is OK. Use LockDownPolicyDefault
+     flq:                                         QueueSingleCopy...
+     flq:                                         Inf     : 'c:\windows\system32\driverstore\filerepository\tabletaudiosample.inf_amd64_bdc98f98d2ea6667\tabletaudiosample.inf'
+     flq:                                         SourceInf: 'c:\windows\system32\driverstore\filerepository\tabletaudiosample.inf_amd64_bdc98f98d2ea6667\tabletaudiosample.inf'
+     flq:                                         SourceSection: [sourcedisksfiles]
+     flq:                                         Source root path based on SourceInf
+     flq:                                         SourceRootPath: 'C:\Windows\System32\DriverStore\FileRepository\tabletaudiosample.inf_amd64_bdc98f98d2ea6667'
+     flq:                                         {FILE_QUEUE_COPY}
+     flq:                                              CopyStyle      - 0x00000000
+     flq:                                              {FILE_QUEUE_COPY}
+     flq:                                                   CopyStyle      - 0x00000000
+     flq:                                                   SourceRootPath - 'C:\Windows\System32\DriverStore\FileRepository\tabletaudiosample.inf_amd64_bdc98f98d2ea6667'
+     flq:                                                   SourceFilename - 'tabletaudiosample.sys'
+     flq:                                                   TargetDirectory- 'C:\Windows\system32\DRIVERS'
+     flq:                                                   TargetFilename - 'tabletaudiosample.sys'
+     flq:                                                   SourceDesc     - 'SYSVAD Driver Disk'
+     flq:                                              {FILE_QUEUE_COPY exit(0x00000000)}
+     flq:                                         {FILE_QUEUE_COPY exit(0x00000000)}
+     flq:                                         QueueSingleCopy...
+     flq:                                         Inf     : 'c:\windows\system32\driverstore\filerepository\tabletaudiosample.inf_amd64_bdc98f98d2ea6667\tabletaudiosample.inf'
+     flq:                                         SourceInf: 'c:\windows\system32\driverstore\filerepository\tabletaudiosample.inf_amd64_bdc98f98d2ea6667\tabletaudiosample.inf'
+     flq:                                         SourceSection: [sourcedisksfiles]
+     flq:                                         Source root path based on SourceInf
+     flq:                                         SourceRootPath: 'C:\Windows\System32\DriverStore\FileRepository\tabletaudiosample.inf_amd64_bdc98f98d2ea6667'
+     flq:                                         {FILE_QUEUE_COPY}
+     flq:                                              CopyStyle      - 0x00000000
+     flq:                                              {FILE_QUEUE_COPY}
+     flq:                                                   CopyStyle      - 0x00000000
+     flq:                                                   SourceRootPath - 'C:\Windows\System32\DriverStore\FileRepository\tabletaudiosample.inf_amd64_bdc98f98d2ea6667'
+     flq:                                                   SourceFilename - 'swapapo.dll'
+     flq:                                                   TargetDirectory- 'C:\Windows\system32'
+     flq:                                                   TargetFilename - 'swapapo.dll'
+     flq:                                                   SourceDesc     - 'SYSVAD Driver Disk'
+     flq:                                              {FILE_QUEUE_COPY exit(0x00000000)}
+     flq:                                         {FILE_QUEUE_COPY exit(0x00000000)}
+     flq:                                         QueueSingleCopy...
+     flq:                                         Inf     : 'c:\windows\system32\driverstore\filerepository\tabletaudiosample.inf_amd64_bdc98f98d2ea6667\tabletaudiosample.inf'
+     flq:                                         SourceInf: 'c:\windows\system32\driverstore\filerepository\tabletaudiosample.inf_amd64_bdc98f98d2ea6667\tabletaudiosample.inf'
+     flq:                                         SourceSection: [sourcedisksfiles]
+     flq:                                         Source root path based on SourceInf
+     flq:                                         SourceRootPath: 'C:\Windows\System32\DriverStore\FileRepository\tabletaudiosample.inf_amd64_bdc98f98d2ea6667'
+     flq:                                         {FILE_QUEUE_COPY}
+     flq:                                              CopyStyle      - 0x00000000
+     flq:                                              {FILE_QUEUE_COPY}
+     flq:                                                   CopyStyle      - 0x00000000
+     flq:                                                   SourceRootPath - 'C:\Windows\System32\DriverStore\FileRepository\tabletaudiosample.inf_amd64_bdc98f98d2ea6667'
+     flq:                                                   SourceFilename - 'delayapo.dll'
+     flq:                                                   TargetDirectory- 'C:\Windows\system32'
+     flq:                                                   TargetFilename - 'delayapo.dll'
+     flq:                                                   SourceDesc     - 'SYSVAD Driver Disk'
+     flq:                                              {FILE_QUEUE_COPY exit(0x00000000)}
+     flq:                                         {FILE_QUEUE_COPY exit(0x00000000)}
+     flq:                                         QueueSingleCopy...
+     flq:                                         Inf     : 'c:\windows\system32\driverstore\filerepository\tabletaudiosample.inf_amd64_bdc98f98d2ea6667\tabletaudiosample.inf'
+     flq:                                         SourceInf: 'c:\windows\system32\driverstore\filerepository\tabletaudiosample.inf_amd64_bdc98f98d2ea6667\tabletaudiosample.inf'
+     flq:                                         SourceSection: [sourcedisksfiles]
+     flq:                                         Source root path based on SourceInf
+     flq:                                         SourceRootPath: 'C:\Windows\System32\DriverStore\FileRepository\tabletaudiosample.inf_amd64_bdc98f98d2ea6667'
+     flq:                                         {FILE_QUEUE_COPY}
+     flq:                                              CopyStyle      - 0x00000000
+     flq:                                              {FILE_QUEUE_COPY}
+     flq:                                                   CopyStyle      - 0x00000000
+     flq:                                                   SourceRootPath - 'C:\Windows\System32\DriverStore\FileRepository\tabletaudiosample.inf_amd64_bdc98f98d2ea6667'
+     flq:                                                   SourceFilename - 'keyworddetectorcontosoadapter.dll'
+     flq:                                                   TargetDirectory- 'C:\Windows\system32'
+     flq:                                                   TargetFilename - 'keyworddetectorcontosoadapter.dll'
+     flq:                                                   SourceDesc     - 'SYSVAD Driver Disk'
+     flq:                                              {FILE_QUEUE_COPY exit(0x00000000)}
+     flq:                                         {FILE_QUEUE_COPY exit(0x00000000)}
+     inf:                                    {Install Inf Section [SYSVAD_SA.NT] exit (0x00000000)}
+     inf:                                    {Install Inf Section [KS.Registration]}
+     inf:                                    {Install Inf Section [KS.Registration] exit (0x00000000)}
+     inf:                                    {Install Inf Section [WDMAUDIO.Registration]}
+     inf:                                         CopyFiles=WDM.CopyFiles  (wdmaudio.inf line 118)
+     flq:                                         QueueSingleCopy...
+     flq:                                         Inf     : 'c:\windows\system32\driverstore\filerepository\tabletaudiosample.inf_amd64_bdc98f98d2ea6667\tabletaudiosample.inf'
+     flq:                                         SourceInf: 'C:\Windows\INF\wdmaudio.inf'
+     flq:                                         SourceSection: [sourcedisksfiles]
+     flq:                                         Source root path based on SourceInf
+     flq:                                         SourceRootPath: 'C:\Windows\System32\DriverStore\FileRepository\wdmaudio.inf_amd64_67df1d1d3003ef46'
+     flq:                                         {FILE_QUEUE_COPY}
+     flq:                                              CopyStyle      - 0x11000000
+     flq:                                              {FILE_QUEUE_COPY}
+     flq:                                                   CopyStyle      - 0x11000000
+     flq:                                                   SourceRootPath - 'C:\Windows\System32\DriverStore\FileRepository\wdmaudio.inf_amd64_67df1d1d3003ef46'
+     flq:                                                   SourceFilename - 'drmk.sys'
+     flq:                                                   TargetDirectory- 'C:\Windows\system32\DRIVERS'
+     flq:                                                   TargetFilename - 'drmk.sys'
+     flq:                                                   SourceDesc     - 'windows cd'
+     flq:                                              {FILE_QUEUE_COPY exit(0x00000000)}
+     flq:                                         {FILE_QUEUE_COPY exit(0x00000000)}
+     flq:                                         QueueSingleCopy...
+     flq:                                         Inf     : 'c:\windows\system32\driverstore\filerepository\tabletaudiosample.inf_amd64_bdc98f98d2ea6667\tabletaudiosample.inf'
+     flq:                                         SourceInf: 'C:\Windows\INF\wdmaudio.inf'
+     flq:                                         SourceSection: [sourcedisksfiles]
+     flq:                                         Source root path based on SourceInf
+     flq:                                         SourceRootPath: 'C:\Windows\System32\DriverStore\FileRepository\wdmaudio.inf_amd64_67df1d1d3003ef46'
+     flq:                                         {FILE_QUEUE_COPY}
+     flq:                                              CopyStyle      - 0x11000000
+     flq:                                              {FILE_QUEUE_COPY}
+     flq:                                                   CopyStyle      - 0x11000000
+     flq:                                                   SourceRootPath - 'C:\Windows\System32\DriverStore\FileRepository\wdmaudio.inf_amd64_67df1d1d3003ef46'
+     flq:                                                   SourceFilename - 'portcls.sys'
+     flq:                                                   TargetDirectory- 'C:\Windows\system32\DRIVERS'
+     flq:                                                   TargetFilename - 'portcls.sys'
+     flq:                                                   SourceDesc     - 'windows cd'
+     flq:                                              {FILE_QUEUE_COPY exit(0x00000000)}
+     flq:                                         {FILE_QUEUE_COPY exit(0x00000000)}
+     inf:                                    {Install Inf Section [WDMAUDIO.Registration] exit (0x00000000)}
+     inf:                                    {Install Inf Section [MsApoFxProxy.Registration]}
+     inf:                                         CopyFiles=MsApoFxProxy.CopyList  (wdmaudio.inf line 84)
+     flq:                                         QueueSingleCopy...
+     flq:                                         Inf     : 'c:\windows\system32\driverstore\filerepository\tabletaudiosample.inf_amd64_bdc98f98d2ea6667\tabletaudiosample.inf'
+     flq:                                         SourceInf: 'C:\Windows\INF\wdmaudio.inf'
+     flq:                                         SourceSection: [sourcedisksfiles]
+     flq:                                         Source root path based on SourceInf
+     flq:                                         SourceRootPath: 'C:\Windows\System32\DriverStore\FileRepository\wdmaudio.inf_amd64_67df1d1d3003ef46'
+     flq:                                         {FILE_QUEUE_COPY}
+     flq:                                              CopyStyle      - 0x11000000
+     flq:                                              {FILE_QUEUE_COPY}
+     flq:                                                   CopyStyle      - 0x11000000
+     flq:                                                   SourceRootPath - 'C:\Windows\System32\DriverStore\FileRepository\wdmaudio.inf_amd64_67df1d1d3003ef46'
+     flq:                                                   SourceFilename - 'MsApoFxProxy.dll'
+     flq:                                                   TargetDirectory- 'C:\Windows\system32'
+     flq:                                                   TargetFilename - 'MsApoFxProxy.dll'
+     flq:                                                   SourceDesc     - 'windows cd'
+     flq:                                              {FILE_QUEUE_COPY exit(0x00000000)}
+     flq:                                         {FILE_QUEUE_COPY exit(0x00000000)}
+     inf:                                    {Install Inf Section [MsApoFxProxy.Registration] exit (0x00000000)}
+     dvi:                                    Processing co-installer registration section [SYSVAD_SA.NT.CoInstallers].
+     inf:                                    {Install Inf Section [SYSVAD_SA.NT.CoInstallers]}
+     inf:                                    {Install Inf Section [SYSVAD_SA.NT.CoInstallers] exit (0x00000000)}
+     dvi:                                    Co-installers registered.
+     dvi:                                    {Install INTERFACES}
+     dvi:                                         Installing section [SYSVAD_SA.NT.Interfaces]
+     dvi:                                    {Install INTERFACES exit 00000000}
+     dvi:                               {Install FILES exit (0x00000000)}
+     dvi:                          Default installer: Exit
+     dvi:                     {DIF_INSTALLDEVICEFILES - exit(0x00000000)} 12:19:15.458
+     dvi:                     {_SCAN_FILE_QUEUE}
+     flq:                          ScanQ flags=620
+     flq:                               SPQ_SCAN_PRUNE_COPY_QUEUE
+     flq:                               SPQ_SCAN_FILE_COMPARISON
+     flq:                               SPQ_SCAN_ACTIVATE_DRP
+     flq:                          ScanQ number of copy nodes=7
+     flq:                          File 'C:\Windows\system32\DRIVERS\drmk.sys' pruned from copy.
+     sig:                          Using catalog 'C:\Windows\system32\CatRoot\{F750E6C3-38EE-11D1-85E5-00C04FC295EE}\Microsoft-Windows-Client-Desktop-Required-Package00~31bf3856ad364e35~amd64~~10.0.17763.1.cat'.
+     flq:                          File 'C:\Windows\system32\DRIVERS\portcls.sys' pruned from copy.
+     sig:                          Using catalog 'C:\Windows\system32\CatRoot\{F750E6C3-38EE-11D1-85E5-00C04FC295EE}\Microsoft-Windows-Client-Desktop-Required-Package00~31bf3856ad364e35~amd64~~10.0.17763.1.cat'.
+     flq:                          ScanQ action=200 DoPruning=32
+     flq:                          ScanQ end Validity flags=620 CopyNodes=5
+     dvi:                     {_SCAN_FILE_QUEUE exit(0, 0x00000000)}
+     flq:                     {FILE_QUEUE_COMMIT} 12:19:15.522
+     flq:                          {SPFILENOTIFY_STARTQUEUE}
+     flq:                          {SPFILENOTIFY_STARTQUEUE - exit(0x00000001)}
+     flq:                          {FILE_QUEUE_COMMIT_COPY_SUBQUEUE}
+     flq:                               {SPFILENOTIFY_STARTSUBQUEUE}
+     flq:                               {SPFILENOTIFY_STARTSUBQUEUE - exit(0x00000001)}
+     flq:                               Source Media:
+     flq:                                    Description  - [SYSVAD Driver Disk]
+     flq:                                    SourcePath   - [C:\Windows\System32\DriverStore\FileRepository\tabletaudiosample.inf_amd64_bdc98f98d2ea6667]
+     flq:                                    SourceFile   - [tabletaudiosample.sys]
+     flq:                                    Flags        - 0x00000000
+     flq:                               {SPFQNOTIFY_NEEDMEDIA}
+     flq:                                    {SPFILENOTIFY_NEEDMEDIA}
+     flq:                                    {SPFILENOTIFY_NEEDMEDIA - exit(0x00000001)}
+     flq:                               {SPFQNOTIFY_NEEDMEDIA - returned 0x00000001}
+     flq:                               Source Media: SPFQOPERATION_DOIT
+     flq:                               {FILE_QUEUE_COMMIT_COPY_FILE}
+     flq:                                    {SPFILENOTIFY_STARTCOPY}
+     dvi:                                         Saving LastKnownGood file C:\Windows\system32\DRIVERS\tabletaudiosample.sys (copy)
+     flq:                                    {SPFILENOTIFY_STARTCOPY - exit(0x00000001)}
+     flq:                                    Copying 'C:\Windows\System32\DriverStore\FileRepository\tabletaudiosample.inf_amd64_bdc98f98d2ea6667\tabletaudiosample.sys' to 'C:\Windows\system32\DRIVERS\tabletaudiosample.sys'.
+     flq:                                    CopyFile: 'C:\Windows\System32\DriverStore\FileRepository\tabletaudiosample.inf_amd64_bdc98f98d2ea6667\tabletaudiosample.sys' to 'C:\Windows\system32\DRIVERS\SET6EDA.tmp'
+     cpy:                                    CopyFile Drp is active
+     sig:                                    Skipping NT5 check on 'C:\Windows\system32\CatRoot\{F750E6C3-38EE-11D1-85E5-00C04FC295EE}\oem18.cat'.
+     sig:                                    Skipping NT5 check on 'C:\Windows\system32\CatRoot\{F750E6C3-38EE-11D1-85E5-00C04FC295EE}\oem18.cat'.
+     cpy:                                    Source File 'C:\Windows\system32\DRIVERS\SET6EDA.tmp' is NOT signed NT5 Crypto.
+     cpy:                                    DrpGetFileProt Status=2 dwClass=0
+     flq:                                    MoveFile: 'C:\Windows\system32\DRIVERS\SET6EDA.tmp' to 'C:\Windows\system32\DRIVERS\tabletaudiosample.sys'
+     flq:                                    Caller applied security to file 'C:\Windows\system32\DRIVERS\tabletaudiosample.sys'.
+     flq:                                    {SPFILENOTIFY_ENDCOPY}
+     flq:                                    {SPFILENOTIFY_ENDCOPY - exit(0x00000001)}
+     flq:                               {FILE_QUEUE_COMMIT_COPY_FILE exit OK}
+     flq:                               {FILE_QUEUE_COMMIT_COPY_FILE}
+     flq:                                    {SPFILENOTIFY_STARTCOPY}
+     dvi:                                         Saving LastKnownGood file C:\Windows\system32\swapapo.dll (copy)
+     flq:                                    {SPFILENOTIFY_STARTCOPY - exit(0x00000001)}
+     flq:                                    Copying 'C:\Windows\System32\DriverStore\FileRepository\tabletaudiosample.inf_amd64_bdc98f98d2ea6667\swapapo.dll' to 'C:\Windows\system32\swapapo.dll'.
+     flq:                                    CopyFile: 'C:\Windows\System32\DriverStore\FileRepository\tabletaudiosample.inf_amd64_bdc98f98d2ea6667\swapapo.dll' to 'C:\Windows\system32\SET6F0A.tmp'
+     cpy:                                    CopyFile Drp is active
+     sig:                                    Skipping NT5 check on 'C:\Windows\system32\CatRoot\{F750E6C3-38EE-11D1-85E5-00C04FC295EE}\oem18.cat'.
+     sig:                                    Skipping NT5 check on 'C:\Windows\system32\CatRoot\{F750E6C3-38EE-11D1-85E5-00C04FC295EE}\oem18.cat'.
+     cpy:                                    Source File 'C:\Windows\system32\SET6F0A.tmp' is NOT signed NT5 Crypto.
+     cpy:                                    DrpGetFileProt Status=2 dwClass=0
+     flq:                                    MoveFile: 'C:\Windows\system32\SET6F0A.tmp' to 'C:\Windows\system32\swapapo.dll'
+     flq:                                    Caller applied security to file 'C:\Windows\system32\swapapo.dll'.
+     flq:                                    {SPFILENOTIFY_ENDCOPY}
+     flq:                                    {SPFILENOTIFY_ENDCOPY - exit(0x00000001)}
+     flq:                               {FILE_QUEUE_COMMIT_COPY_FILE exit OK}
+     flq:                               {FILE_QUEUE_COMMIT_COPY_FILE}
+     flq:                                    {SPFILENOTIFY_STARTCOPY}
+     dvi:                                         Saving LastKnownGood file C:\Windows\system32\delayapo.dll (copy)
+     flq:                                    {SPFILENOTIFY_STARTCOPY - exit(0x00000001)}
+     flq:                                    Copying 'C:\Windows\System32\DriverStore\FileRepository\tabletaudiosample.inf_amd64_bdc98f98d2ea6667\delayapo.dll' to 'C:\Windows\system32\delayapo.dll'.
+     flq:                                    CopyFile: 'C:\Windows\System32\DriverStore\FileRepository\tabletaudiosample.inf_amd64_bdc98f98d2ea6667\delayapo.dll' to 'C:\Windows\system32\SET6F2A.tmp'
+     cpy:                                    CopyFile Drp is active
+     sig:                                    Skipping NT5 check on 'C:\Windows\system32\CatRoot\{F750E6C3-38EE-11D1-85E5-00C04FC295EE}\oem18.cat'.
+     sig:                                    Skipping NT5 check on 'C:\Windows\system32\CatRoot\{F750E6C3-38EE-11D1-85E5-00C04FC295EE}\oem18.cat'.
+     cpy:                                    Source File 'C:\Windows\system32\SET6F2A.tmp' is NOT signed NT5 Crypto.
+     cpy:                                    DrpGetFileProt Status=2 dwClass=0
+     flq:                                    MoveFile: 'C:\Windows\system32\SET6F2A.tmp' to 'C:\Windows\system32\delayapo.dll'
+     flq:                                    Caller applied security to file 'C:\Windows\system32\delayapo.dll'.
+     flq:                                    {SPFILENOTIFY_ENDCOPY}
+     flq:                                    {SPFILENOTIFY_ENDCOPY - exit(0x00000001)}
+     flq:                               {FILE_QUEUE_COMMIT_COPY_FILE exit OK}
+     flq:                               {FILE_QUEUE_COMMIT_COPY_FILE}
+     flq:                                    {SPFILENOTIFY_STARTCOPY}
+     dvi:                                         Saving LastKnownGood file C:\Windows\system32\keyworddetectorcontosoadapter.dll (copy)
+     flq:                                    {SPFILENOTIFY_STARTCOPY - exit(0x00000001)}
+     flq:                                    Copying 'C:\Windows\System32\DriverStore\FileRepository\tabletaudiosample.inf_amd64_bdc98f98d2ea6667\keyworddetectorcontosoadapter.dll' to 'C:\Windows\system32\keyworddetectorcontosoadapter.dll'.
+     flq:                                    CopyFile: 'C:\Windows\System32\DriverStore\FileRepository\tabletaudiosample.inf_amd64_bdc98f98d2ea6667\keyworddetectorcontosoadapter.dll' to 'C:\Windows\system32\SET6F4B.tmp'
+     cpy:                                    CopyFile Drp is active
+     sig:                                    Skipping NT5 check on 'C:\Windows\system32\CatRoot\{F750E6C3-38EE-11D1-85E5-00C04FC295EE}\oem18.cat'.
+     sig:                                    Skipping NT5 check on 'C:\Windows\system32\CatRoot\{F750E6C3-38EE-11D1-85E5-00C04FC295EE}\oem18.cat'.
+     cpy:                                    Source File 'C:\Windows\system32\SET6F4B.tmp' is NOT signed NT5 Crypto.
+     cpy:                                    DrpGetFileProt Status=2 dwClass=0
+     flq:                                    MoveFile: 'C:\Windows\system32\SET6F4B.tmp' to 'C:\Windows\system32\keyworddetectorcontosoadapter.dll'
+     flq:                                    Caller applied security to file 'C:\Windows\system32\keyworddetectorcontosoadapter.dll'.
+     flq:                                    {SPFILENOTIFY_ENDCOPY}
+     flq:                                    {SPFILENOTIFY_ENDCOPY - exit(0x00000001)}
+     flq:                               {FILE_QUEUE_COMMIT_COPY_FILE exit OK}
+     flq:                               Source Media:
+     flq:                                    Description  - [windows cd]
+     flq:                                    SourcePath   - [C:\Windows\System32\DriverStore\FileRepository\wdmaudio.inf_amd64_67df1d1d3003ef46]
+     flq:                                    SourceFile   - [MsApoFxProxy.dll]
+     flq:                                    Flags        - 0x00000000
+     flq:                               {SPFQNOTIFY_NEEDMEDIA}
+     flq:                                    {SPFILENOTIFY_NEEDMEDIA}
+     flq:                                    {SPFILENOTIFY_NEEDMEDIA - exit(0x00000001)}
+     flq:                               {SPFQNOTIFY_NEEDMEDIA - returned 0x00000001}
+     flq:                               Source Media: SPFQOPERATION_DOIT
+     flq:                               {FILE_QUEUE_COMMIT_COPY_FILE}
+     flq:                                    {SPFILENOTIFY_STARTCOPY}
+     dvi:                                         Saving LastKnownGood file C:\Windows\system32\MsApoFxProxy.dll (copy)
+     flq:                                    {SPFILENOTIFY_STARTCOPY - exit(0x00000001)}
+     flq:                                    Hardlinking 'C:\Windows\System32\DriverStore\FileRepository\wdmaudio.inf_amd64_67df1d1d3003ef46\MsApoFxProxy.dll' to 'C:\Windows\system32\MsApoFxProxy.dll'.
+     cpy:                                    CopyFile Drp is active
+     sig:                                    Using catalog 'C:\Windows\system32\CatRoot\{F750E6C3-38EE-11D1-85E5-00C04FC295EE}\Microsoft-Windows-Client-Desktop-Required-Package00~31bf3856ad364e35~amd64~~10.0.17763.1.cat'.
+     cpy:                                    Source File 'C:\Windows\System32\DriverStore\FileRepository\wdmaudio.inf_amd64_67df1d1d3003ef46\MsApoFxProxy.dll' is signed NT5 Crypto.
+     cpy:                                    DrpGetFileProt Status=2 dwClass=0
+     flq:                                    HardLink: 'C:\Windows\System32\DriverStore\FileRepository\wdmaudio.inf_amd64_67df1d1d3003ef46\MsApoFxProxy.dll' to 'C:\Windows\system32\MsApoFxProxy.dll'
+     flq:                                    Caller applied security to file 'C:\Windows\system32\MsApoFxProxy.dll'.
+     flq:                                    {SPFILENOTIFY_ENDCOPY}
+     flq:                                    {SPFILENOTIFY_ENDCOPY - exit(0x00000001)}
+     flq:                               {FILE_QUEUE_COMMIT_COPY_FILE exit OK}
+     flq:                               {SPFILENOTIFY_ENDSUBQUEUE}
+     flq:                               {SPFILENOTIFY_ENDSUBQUEUE - exit(0x00000001)}
+     flq:                          {FILE_QUEUE_COMMIT_COPY_SUBQUEUE exit OK}
+     flq:                          {SPFILENOTIFY_ENDQUEUE}
+     flq:                          {SPFILENOTIFY_ENDQUEUE - exit(0x00000001)}
+     flq:                     {FILE_QUEUE_COMMIT exit OK} 12:19:15.744
+     dvi:                     {_SCAN_FILE_QUEUE}
+     flq:                          ScanQ flags=4
+     flq:                               SPQ_SCAN_USE_CALLBACK
+     flq:                          ScanQ number of copy nodes=5
+     flq:                          {SPFILENOTIFY_QUEUESCAN}
+     flq:                          {SPFILENOTIFY_QUEUESCAN - exit(0x00000000)}
+     flq:                          {SPFILENOTIFY_QUEUESCAN}
+     flq:                          {SPFILENOTIFY_QUEUESCAN - exit(0x00000000)}
+     flq:                          {SPFILENOTIFY_QUEUESCAN}
+     flq:                          {SPFILENOTIFY_QUEUESCAN - exit(0x00000000)}
+     flq:                          {SPFILENOTIFY_QUEUESCAN}
+     flq:                          {SPFILENOTIFY_QUEUESCAN - exit(0x00000000)}
+     flq:                          {SPFILENOTIFY_QUEUESCAN}
+     flq:                          {SPFILENOTIFY_QUEUESCAN - exit(0x00000000)}
+     flq:                          ScanQ end Validity flags=4 CopyNodes=5
+     dvi:                     {_SCAN_FILE_QUEUE exit(0, 0x00000000)}
+     dvi:                     {DIF_REGISTER_COINSTALLERS} 12:19:15.766
+     dvi:                          Reset Device: Resetting device configuration. 12:19:15.768
+     dvi:                          Reset Device: Resetting device configuration completed. 12:19:15.770
+     dvi:                          Class installer: Enter 12:19:15.772
+     dvi:                          Class installer: Exit
+     dvi:                          Default installer: Enter 12:19:15.774
+     inf:                               Opened PNF: 'c:\windows\system32\driverstore\filerepository\tabletaudiosample.inf_amd64_bdc98f98d2ea6667\tabletaudiosample.inf' ([strings])
+     inf:                               {Install Inf Section [SYSVAD_SA.NT.CoInstallers]}
+     inf:                                    {Install from INF Section - SYSVAD_SA.NT.CoInstallers} 12:19:15.780
+     inf:                                         Flags         - 0x001001ee
+     inf:                                         Reference Key - 2
+     inf:                                         Source root   - (null)
+     inf:                                         Copy flags    - 0x001001ee
+     inf:                                    {Install from INF Section - exit(0x00000000)} 12:19:15.788
+     inf:                               {Install Inf Section [SYSVAD_SA.NT.CoInstallers] exit (0x00000000)}
+     dvi:                               Co-installers registered.
+     dvi:                          Default installer: Exit
+     dvi:                     {DIF_REGISTER_COINSTALLERS - exit(0x00000000)} 12:19:15.792
+     dvi:                     {DIF_INSTALLINTERFACES} 12:19:15.794
+     inf:                          Opened PNF: 'c:\windows\system32\driverstore\filerepository\tabletaudiosample.inf_amd64_bdc98f98d2ea6667\tabletaudiosample.inf' ([strings])
+     dvi:                          No CoInstallers found
+     dvi:                          Class installer: Enter 12:19:15.798
+     dvi:                          Class installer: Exit
+     dvi:                          Default installer: Enter 12:19:15.802
+     dvi:                               {Install INTERFACES}
+     inf:                                    Opened PNF: 'c:\windows\system32\driverstore\filerepository\tabletaudiosample.inf_amd64_bdc98f98d2ea6667\tabletaudiosample.inf' ([strings])
+     dvi:                                    Installing section [SYSVAD_SA.NT.Interfaces]
+     inf:                                    {Install from INF Section - SYSVAD.I.WaveSpeaker} 12:19:15.810
+     inf:                                         Flags         - 0x001005ee
+     inf:                                         Reference Key - 6
+     inf:                                         Source root   - (null)
+     inf:                                         Copy flags    - 0x001005ee
+     inf:                                         AddReg=SYSVAD.I.WaveSpeaker.AddReg  (tabletaudiosample.inf line 169)
+     inf:                                    {Install from INF Section - exit(0x00000000)} 12:19:15.820
+     inf:                                    {Install from INF Section - SYSVAD.I.WaveSpeaker} 12:19:15.822
+     inf:                                         Flags         - 0x001005ee
+     inf:                                         Reference Key - 6
+     inf:                                         Source root   - (null)
+     inf:                                         Copy flags    - 0x001005ee
+     inf:                                         AddReg=SYSVAD.I.WaveSpeaker.AddReg  (tabletaudiosample.inf line 169)
+     inf:                                    {Install from INF Section - exit(0x00000000)} 12:19:15.830
+     inf:                                    {Install from INF Section - SYSVAD.I.WaveSpeaker} 12:19:15.832
+     inf:                                         Flags         - 0x001005ee
+     inf:                                         Reference Key - 6
+     inf:                                         Source root   - (null)
+     inf:                                         Copy flags    - 0x001005ee
+     inf:                                         AddReg=SYSVAD.I.WaveSpeaker.AddReg  (tabletaudiosample.inf line 169)
+     inf:                                    {Install from INF Section - exit(0x00000000)} 12:19:15.840
+     inf:                                    {Install from INF Section - SYSVAD.I.TopologySpeaker} 12:19:15.842
+     inf:                                         Flags         - 0x001005ee
+     inf:                                         Reference Key - 6
+     inf:                                         Source root   - (null)
+     inf:                                         Copy flags    - 0x001005ee
+     inf:                                         AddReg=SYSVAD.I.TopologySpeaker.AddReg,SWAPAPO.I.Association0.AddReg  (tabletaudiosample.inf line 176)
+     inf:                                    {Install from INF Section - exit(0x00000000)} 12:19:15.852
+     inf:                                    {Install from INF Section - SYSVAD.I.TopologySpeaker} 12:19:15.854
+     inf:                                         Flags         - 0x001005ee
+     inf:                                         Reference Key - 6
+     inf:                                         Source root   - (null)
+     inf:                                         Copy flags    - 0x001005ee
+     inf:                                         AddReg=SYSVAD.I.TopologySpeaker.AddReg,SWAPAPO.I.Association0.AddReg  (tabletaudiosample.inf line 176)
+     inf:                                    {Install from INF Section - exit(0x00000000)} 12:19:15.862
+     inf:                                    {Install from INF Section - SYSVAD.I.WaveSpeakerHeadphone} 12:19:15.864
+     inf:                                         Flags         - 0x001005ee
+     inf:                                         Reference Key - 6
+     inf:                                         Source root   - (null)
+     inf:                                         Copy flags    - 0x001005ee
+     inf:                                         AddReg=SYSVAD.I.WaveSpeakerHeadphone.AddReg  (tabletaudiosample.inf line 228)
+     inf:                                    {Install from INF Section - exit(0x00000000)} 12:19:15.874
+     inf:                                    {Install from INF Section - SYSVAD.I.WaveSpeakerHeadphone} 12:19:15.876
+     inf:                                         Flags         - 0x001005ee
+     inf:                                         Reference Key - 6
+     inf:                                         Source root   - (null)
+     inf:                                         Copy flags    - 0x001005ee
+     inf:                                         AddReg=SYSVAD.I.WaveSpeakerHeadphone.AddReg  (tabletaudiosample.inf line 228)
+     inf:                                    {Install from INF Section - exit(0x00000000)} 12:19:15.884
+     inf:                                    {Install from INF Section - SYSVAD.I.WaveSpeakerHeadphone} 12:19:15.886
+     inf:                                         Flags         - 0x001005ee
+     inf:                                         Reference Key - 6
+     inf:                                         Source root   - (null)
+     inf:                                         Copy flags    - 0x001005ee
+     inf:                                         AddReg=SYSVAD.I.WaveSpeakerHeadphone.AddReg  (tabletaudiosample.inf line 228)
+     inf:                                    {Install from INF Section - exit(0x00000000)} 12:19:15.894
+     inf:                                    {Install from INF Section - SYSVAD.I.TopologySpeakerHeadphone} 12:19:15.896
+     inf:                                         Flags         - 0x001005ee
+     inf:                                         Reference Key - 6
+     inf:                                         Source root   - (null)
+     inf:                                         Copy flags    - 0x001005ee
+     inf:                                         AddReg=SYSVAD.I.TopologySpeakerHeadphone.AddReg  (tabletaudiosample.inf line 234)
+     inf:                                    {Install from INF Section - exit(0x00000000)} 12:19:15.904
+     inf:                                    {Install from INF Section - SYSVAD.I.TopologySpeakerHeadphone} 12:19:15.906
+     inf:                                         Flags         - 0x001005ee
+     inf:                                         Reference Key - 6
+     inf:                                         Source root   - (null)
+     inf:                                         Copy flags    - 0x001005ee
+     inf:                                         AddReg=SYSVAD.I.TopologySpeakerHeadphone.AddReg  (tabletaudiosample.inf line 234)
+     inf:                                    {Install from INF Section - exit(0x00000000)} 12:19:15.914
+     inf:                                    {Install from INF Section - SYSVAD.I.WaveHdmi} 12:19:15.916
+     inf:                                         Flags         - 0x001005ee
+     inf:                                         Reference Key - 6
+     inf:                                         Source root   - (null)
+     inf:                                         Copy flags    - 0x001005ee
+     inf:                                         AddReg=SYSVAD.I.WaveHdmi.AddReg  (tabletaudiosample.inf line 192)
+     inf:                                    {Install from INF Section - exit(0x00000000)} 12:19:15.924
+     inf:                                    {Install from INF Section - SYSVAD.I.WaveHdmi} 12:19:15.926
+     inf:                                         Flags         - 0x001005ee
+     inf:                                         Reference Key - 6
+     inf:                                         Source root   - (null)
+     inf:                                         Copy flags    - 0x001005ee
+     inf:                                         AddReg=SYSVAD.I.WaveHdmi.AddReg  (tabletaudiosample.inf line 192)
+     inf:                                    {Install from INF Section - exit(0x00000000)} 12:19:15.934
+     inf:                                    {Install from INF Section - SYSVAD.I.WaveHdmi} 12:19:15.936
+     inf:                                         Flags         - 0x001005ee
+     inf:                                         Reference Key - 6
+     inf:                                         Source root   - (null)
+     inf:                                         Copy flags    - 0x001005ee
+     inf:                                         AddReg=SYSVAD.I.WaveHdmi.AddReg  (tabletaudiosample.inf line 192)
+     inf:                                    {Install from INF Section - exit(0x00000000)} 12:19:15.944
+     inf:                                    {Install from INF Section - SYSVAD.I.TopologyHdmi} 12:19:15.946
+     inf:                                         Flags         - 0x001005ee
+     inf:                                         Reference Key - 6
+     inf:                                         Source root   - (null)
+     inf:                                         Copy flags    - 0x001005ee
+     inf:                                         AddReg=SYSVAD.I.TopologyHdmi.AddReg  (tabletaudiosample.inf line 198)
+     inf:                                    {Install from INF Section - exit(0x00000000)} 12:19:15.956
+     inf:                                    {Install from INF Section - SYSVAD.I.TopologyHdmi} 12:19:15.956
+     inf:                                         Flags         - 0x001005ee
+     inf:                                         Reference Key - 6
+     inf:                                         Source root   - (null)
+     inf:                                         Copy flags    - 0x001005ee
+     inf:                                         AddReg=SYSVAD.I.TopologyHdmi.AddReg  (tabletaudiosample.inf line 198)
+     inf:                                    {Install from INF Section - exit(0x00000000)} 12:19:15.966
+     inf:                                    {Install from INF Section - SYSVAD.I.WaveSpdif} 12:19:15.968
+     inf:                                         Flags         - 0x001005ee
+     inf:                                         Reference Key - 6
+     inf:                                         Source root   - (null)
+     inf:                                         Copy flags    - 0x001005ee
+     inf:                                         AddReg=SYSVAD.I.WaveSpdif.AddReg  (tabletaudiosample.inf line 210)
+     inf:                                    {Install from INF Section - exit(0x00000000)} 12:19:15.976
+     inf:                                    {Install from INF Section - SYSVAD.I.WaveSpdif} 12:19:15.978
+     inf:                                         Flags         - 0x001005ee
+     inf:                                         Reference Key - 6
+     inf:                                         Source root   - (null)
+     inf:                                         Copy flags    - 0x001005ee
+     inf:                                         AddReg=SYSVAD.I.WaveSpdif.AddReg  (tabletaudiosample.inf line 210)
+     inf:                                    {Install from INF Section - exit(0x00000000)} 12:19:15.986
+     inf:                                    {Install from INF Section - SYSVAD.I.WaveSpdif} 12:19:15.988
+     inf:                                         Flags         - 0x001005ee
+     inf:                                         Reference Key - 6
+     inf:                                         Source root   - (null)
+     inf:                                         Copy flags    - 0x001005ee
+     inf:                                         AddReg=SYSVAD.I.WaveSpdif.AddReg  (tabletaudiosample.inf line 210)
+     inf:                                    {Install from INF Section - exit(0x00000000)} 12:19:15.996
+     inf:                                    {Install from INF Section - SYSVAD.I.TopologySpdif} 12:19:15.998
+     inf:                                         Flags         - 0x001005ee
+     inf:                                         Reference Key - 6
+     inf:                                         Source root   - (null)
+     inf:                                         Copy flags    - 0x001005ee
+     inf:                                         AddReg=SYSVAD.I.TopologySpdif.AddReg  (tabletaudiosample.inf line 216)
+     inf:                                    {Install from INF Section - exit(0x00000000)} 12:19:16.006
+     inf:                                    {Install from INF Section - SYSVAD.I.TopologySpdif} 12:19:16.008
+     inf:                                         Flags         - 0x001005ee
+     inf:                                         Reference Key - 6
+     inf:                                         Source root   - (null)
+     inf:                                         Copy flags    - 0x001005ee
+     inf:                                         AddReg=SYSVAD.I.TopologySpdif.AddReg  (tabletaudiosample.inf line 216)
+     inf:                                    {Install from INF Section - exit(0x00000000)} 12:19:16.016
+     inf:                                    {Install from INF Section - SYSVAD.I.WaveMicIn} 12:19:16.018
+     inf:                                         Flags         - 0x001005ee
+     inf:                                         Reference Key - 6
+     inf:                                         Source root   - (null)
+     inf:                                         Copy flags    - 0x001005ee
+     inf:                                         AddReg=SYSVAD.I.WaveMicIn.AddReg  (tabletaudiosample.inf line 246)
+     inf:                                    {Install from INF Section - exit(0x00000000)} 12:19:16.026
+     inf:                                    {Install from INF Section - SYSVAD.I.WaveMicIn} 12:19:16.028
+     inf:                                         Flags         - 0x001005ee
+     inf:                                         Reference Key - 6
+     inf:                                         Source root   - (null)
+     inf:                                         Copy flags    - 0x001005ee
+     inf:                                         AddReg=SYSVAD.I.WaveMicIn.AddReg  (tabletaudiosample.inf line 246)
+     inf:                                    {Install from INF Section - exit(0x00000000)} 12:19:16.036
+     inf:                                    {Install from INF Section - SYSVAD.I.WaveMicIn} 12:19:16.038
+     inf:                                         Flags         - 0x001005ee
+     inf:                                         Reference Key - 6
+     inf:                                         Source root   - (null)
+     inf:                                         Copy flags    - 0x001005ee
+     inf:                                         AddReg=SYSVAD.I.WaveMicIn.AddReg  (tabletaudiosample.inf line 246)
+     inf:                                    {Install from INF Section - exit(0x00000000)} 12:19:16.046
+     inf:                                    {Install from INF Section - SYSVAD.I.TopologyMicIn} 12:19:16.048
+     inf:                                         Flags         - 0x001005ee
+     inf:                                         Reference Key - 6
+     inf:                                         Source root   - (null)
+     inf:                                         Copy flags    - 0x001005ee
+     inf:                                         AddReg=SYSVAD.I.TopologyMicIn.AddReg  (tabletaudiosample.inf line 252)
+     inf:                                    {Install from INF Section - exit(0x00000000)} 12:19:16.058
+     inf:                                    {Install from INF Section - SYSVAD.I.TopologyMicIn} 12:19:16.060
+     inf:                                         Flags         - 0x001005ee
+     inf:                                         Reference Key - 6
+     inf:                                         Source root   - (null)
+     inf:                                         Copy flags    - 0x001005ee
+     inf:                                         AddReg=SYSVAD.I.TopologyMicIn.AddReg  (tabletaudiosample.inf line 252)
+     inf:                                    {Install from INF Section - exit(0x00000000)} 12:19:16.068
+     inf:                                    {Install from INF Section - SYSVAD.I.WaveMicArray1} 12:19:16.070
+     inf:                                         Flags         - 0x001005ee
+     inf:                                         Reference Key - 6
+     inf:                                         Source root   - (null)
+     inf:                                         Copy flags    - 0x001005ee
+     inf:                                         AddReg=SYSVAD.I.WaveMicArray1.AddReg  (tabletaudiosample.inf line 264)
+     inf:                                    {Install from INF Section - exit(0x00000000)} 12:19:16.078
+     inf:                                    {Install from INF Section - SYSVAD.I.WaveMicArray1} 12:19:16.080
+     inf:                                         Flags         - 0x001005ee
+     inf:                                         Reference Key - 6
+     inf:                                         Source root   - (null)
+     inf:                                         Copy flags    - 0x001005ee
+     inf:                                         AddReg=SYSVAD.I.WaveMicArray1.AddReg  (tabletaudiosample.inf line 264)
+     inf:                                    {Install from INF Section - exit(0x00000000)} 12:19:16.088
+     inf:                                    {Install from INF Section - SYSVAD.I.WaveMicArray1} 12:19:16.090
+     inf:                                         Flags         - 0x001005ee
+     inf:                                         Reference Key - 6
+     inf:                                         Source root   - (null)
+     inf:                                         Copy flags    - 0x001005ee
+     inf:                                         AddReg=SYSVAD.I.WaveMicArray1.AddReg  (tabletaudiosample.inf line 264)
+     inf:                                    {Install from INF Section - exit(0x00000000)} 12:19:16.098
+     inf:                                    {Install from INF Section - SYSVAD.I.TopologyMicArray1} 12:19:16.100
+     inf:                                         Flags         - 0x001005ee
+     inf:                                         Reference Key - 6
+     inf:                                         Source root   - (null)
+     inf:                                         Copy flags    - 0x001005ee
+     inf:                                         AddReg=SYSVAD.I.TopologyMicArray1.AddReg,MsApoFxProxyEFX.I.Association0.AddReg  (tabletaudiosample.inf line 270)
+     inf:                                    {Install from INF Section - exit(0x00000000)} 12:19:16.108
+     inf:                                    {Install from INF Section - SYSVAD.I.TopologyMicArray1} 12:19:16.110
+     inf:                                         Flags         - 0x001005ee
+     inf:                                         Reference Key - 6
+     inf:                                         Source root   - (null)
+     inf:                                         Copy flags    - 0x001005ee
+     inf:                                         AddReg=SYSVAD.I.TopologyMicArray1.AddReg,MsApoFxProxyEFX.I.Association0.AddReg  (tabletaudiosample.inf line 270)
+     inf:                                    {Install from INF Section - exit(0x00000000)} 12:19:16.120
+     inf:                                    {Install from INF Section - SYSVAD.I.WaveMicArray2} 12:19:16.122
+     inf:                                         Flags         - 0x001005ee
+     inf:                                         Reference Key - 6
+     inf:                                         Source root   - (null)
+     inf:                                         Copy flags    - 0x001005ee
+     inf:                                         AddReg=SYSVAD.I.WaveMicArray2.AddReg  (tabletaudiosample.inf line 294)
+     inf:                                    {Install from INF Section - exit(0x00000000)} 12:19:16.130
+     inf:                                    {Install from INF Section - SYSVAD.I.WaveMicArray2} 12:19:16.132
+     inf:                                         Flags         - 0x001005ee
+     inf:                                         Reference Key - 6
+     inf:                                         Source root   - (null)
+     inf:                                         Copy flags    - 0x001005ee
+     inf:                                         AddReg=SYSVAD.I.WaveMicArray2.AddReg  (tabletaudiosample.inf line 294)
+     inf:                                    {Install from INF Section - exit(0x00000000)} 12:19:16.140
+     inf:                                    {Install from INF Section - SYSVAD.I.WaveMicArray2} 12:19:16.142
+     inf:                                         Flags         - 0x001005ee
+     inf:                                         Reference Key - 6
+     inf:                                         Source root   - (null)
+     inf:                                         Copy flags    - 0x001005ee
+     inf:                                         AddReg=SYSVAD.I.WaveMicArray2.AddReg  (tabletaudiosample.inf line 294)
+     inf:                                    {Install from INF Section - exit(0x00000000)} 12:19:16.150
+     inf:                                    {Install from INF Section - SYSVAD.I.TopologyMicArray2} 12:19:16.152
+     inf:                                         Flags         - 0x001005ee
+     inf:                                         Reference Key - 6
+     inf:                                         Source root   - (null)
+     inf:                                         Copy flags    - 0x001005ee
+     inf:                                         AddReg=SYSVAD.I.TopologyMicArray2.AddReg  (tabletaudiosample.inf line 300)
+     inf:                                    {Install from INF Section - exit(0x00000000)} 12:19:16.160
+     inf:                                    {Install from INF Section - SYSVAD.I.TopologyMicArray2} 12:19:16.164
+     inf:                                         Flags         - 0x001005ee
+     inf:                                         Reference Key - 6
+     inf:                                         Source root   - (null)
+     inf:                                         Copy flags    - 0x001005ee
+     inf:                                         AddReg=SYSVAD.I.TopologyMicArray2.AddReg  (tabletaudiosample.inf line 300)
+     inf:                                    {Install from INF Section - exit(0x00000000)} 12:19:16.172
+     inf:                                    {Install from INF Section - SYSVAD.I.WaveMicArray3} 12:19:16.174
+     inf:                                         Flags         - 0x001005ee
+     inf:                                         Reference Key - 6
+     inf:                                         Source root   - (null)
+     inf:                                         Copy flags    - 0x001005ee
+     inf:                                         AddReg=SYSVAD.I.WaveMicArray3.AddReg  (tabletaudiosample.inf line 316)
+     inf:                                    {Install from INF Section - exit(0x00000000)} 12:19:16.182
+     inf:                                    {Install from INF Section - SYSVAD.I.WaveMicArray3} 12:19:16.184
+     inf:                                         Flags         - 0x001005ee
+     inf:                                         Reference Key - 6
+     inf:                                         Source root   - (null)
+     inf:                                         Copy flags    - 0x001005ee
+     inf:                                         AddReg=SYSVAD.I.WaveMicArray3.AddReg  (tabletaudiosample.inf line 316)
+     inf:                                    {Install from INF Section - exit(0x00000000)} 12:19:16.192
+     inf:                                    {Install from INF Section - SYSVAD.I.WaveMicArray3} 12:19:16.194
+     inf:                                         Flags         - 0x001005ee
+     inf:                                         Reference Key - 6
+     inf:                                         Source root   - (null)
+     inf:                                         Copy flags    - 0x001005ee
+     inf:                                         AddReg=SYSVAD.I.WaveMicArray3.AddReg  (tabletaudiosample.inf line 316)
+     inf:                                    {Install from INF Section - exit(0x00000000)} 12:19:16.202
+     inf:                                    {Install from INF Section - SYSVAD.I.TopologyMicArray3} 12:19:16.204
+     inf:                                         Flags         - 0x001005ee
+     inf:                                         Reference Key - 6
+     inf:                                         Source root   - (null)
+     inf:                                         Copy flags    - 0x001005ee
+     inf:                                         AddReg=SYSVAD.I.TopologyMicArray3.AddReg  (tabletaudiosample.inf line 322)
+     inf:                                    {Install from INF Section - exit(0x00000000)} 12:19:16.212
+     inf:                                    {Install from INF Section - SYSVAD.I.TopologyMicArray3} 12:19:16.214
+     inf:                                         Flags         - 0x001005ee
+     inf:                                         Reference Key - 6
+     inf:                                         Source root   - (null)
+     inf:                                         Copy flags    - 0x001005ee
+     inf:                                         AddReg=SYSVAD.I.TopologyMicArray3.AddReg  (tabletaudiosample.inf line 322)
+     inf:                                    {Install from INF Section - exit(0x00000000)} 12:19:16.224
+     inf:                                    {Install from INF Section - SYSVAD.I.WaveBthHfpSpeaker} 12:19:16.226
+     inf:                                         Flags         - 0x001005ee
+     inf:                                         Reference Key - 6
+     inf:                                         Source root   - (null)
+     inf:                                         Copy flags    - 0x001005ee
+     inf:                                         AddReg=SYSVAD.I.WaveBthHfpSpeaker.AddReg  (tabletaudiosample.inf line 338)
+     inf:                                    {Install from INF Section - exit(0x00000000)} 12:19:16.234
+     inf:                                    {Install from INF Section - SYSVAD.I.WaveBthHfpSpeaker} 12:19:16.236
+     inf:                                         Flags         - 0x001005ee
+     inf:                                         Reference Key - 6
+     inf:                                         Source root   - (null)
+     inf:                                         Copy flags    - 0x001005ee
+     inf:                                         AddReg=SYSVAD.I.WaveBthHfpSpeaker.AddReg  (tabletaudiosample.inf line 338)
+     inf:                                    {Install from INF Section - exit(0x00000000)} 12:19:16.244
+     inf:                                    {Install from INF Section - SYSVAD.I.WaveBthHfpSpeaker} 12:19:16.246
+     inf:                                         Flags         - 0x001005ee
+     inf:                                         Reference Key - 6
+     inf:                                         Source root   - (null)
+     inf:                                         Copy flags    - 0x001005ee
+     inf:                                         AddReg=SYSVAD.I.WaveBthHfpSpeaker.AddReg  (tabletaudiosample.inf line 338)
+     inf:                                    {Install from INF Section - exit(0x00000000)} 12:19:16.254
+     inf:                                    {Install from INF Section - SYSVAD.I.TopologyBthHfpSpeaker} 12:19:16.256
+     inf:                                         Flags         - 0x001005ee
+     inf:                                         Reference Key - 6
+     inf:                                         Source root   - (null)
+     inf:                                         Copy flags    - 0x001005ee
+     inf:                                         AddReg=SYSVAD.I.TopologyBthHfpSpeaker.AddReg  (tabletaudiosample.inf line 344)
+     inf:                                    {Install from INF Section - exit(0x00000000)} 12:19:16.264
+     inf:                                    {Install from INF Section - SYSVAD.I.TopologyBthHfpSpeaker} 12:19:16.266
+     inf:                                         Flags         - 0x001005ee
+     inf:                                         Reference Key - 6
+     inf:                                         Source root   - (null)
+     inf:                                         Copy flags    - 0x001005ee
+     inf:                                         AddReg=SYSVAD.I.TopologyBthHfpSpeaker.AddReg  (tabletaudiosample.inf line 344)
+     inf:                                    {Install from INF Section - exit(0x00000000)} 12:19:16.274
+     inf:                                    {Install from INF Section - SYSVAD.I.WaveBthHfpMic} 12:19:16.276
+     inf:                                         Flags         - 0x001005ee
+     inf:                                         Reference Key - 6
+     inf:                                         Source root   - (null)
+     inf:                                         Copy flags    - 0x001005ee
+     inf:                                         AddReg=SYSVAD.I.WaveBthHfpMic.AddReg  (tabletaudiosample.inf line 356)
+     inf:                                    {Install from INF Section - exit(0x00000000)} 12:19:16.286
+     inf:                                    {Install from INF Section - SYSVAD.I.WaveBthHfpMic} 12:19:16.288
+     inf:                                         Flags         - 0x001005ee
+     inf:                                         Reference Key - 6
+     inf:                                         Source root   - (null)
+     inf:                                         Copy flags    - 0x001005ee
+     inf:                                         AddReg=SYSVAD.I.WaveBthHfpMic.AddReg  (tabletaudiosample.inf line 356)
+     inf:                                    {Install from INF Section - exit(0x00000000)} 12:19:16.296
+     inf:                                    {Install from INF Section - SYSVAD.I.WaveBthHfpMic} 12:19:16.298
+     inf:                                         Flags         - 0x001005ee
+     inf:                                         Reference Key - 6
+     inf:                                         Source root   - (null)
+     inf:                                         Copy flags    - 0x001005ee
+     inf:                                         AddReg=SYSVAD.I.WaveBthHfpMic.AddReg  (tabletaudiosample.inf line 356)
+     inf:                                    {Install from INF Section - exit(0x00000000)} 12:19:16.306
+     inf:                                    {Install from INF Section - SYSVAD.I.TopologyBthHfpMic} 12:19:16.308
+     inf:                                         Flags         - 0x001005ee
+     inf:                                         Reference Key - 6
+     inf:                                         Source root   - (null)
+     inf:                                         Copy flags    - 0x001005ee
+     inf:                                         AddReg=SYSVAD.I.TopologyBthHfpMic.AddReg,MsApoFxProxy.I.Association0.AddReg  (tabletaudiosample.inf line 362)
+     inf:                                    {Install from INF Section - exit(0x00000000)} 12:19:16.318
+     inf:                                    {Install from INF Section - SYSVAD.I.TopologyBthHfpMic} 12:19:16.320
+     inf:                                         Flags         - 0x001005ee
+     inf:                                         Reference Key - 6
+     inf:                                         Source root   - (null)
+     inf:                                         Copy flags    - 0x001005ee
+     inf:                                         AddReg=SYSVAD.I.TopologyBthHfpMic.AddReg,MsApoFxProxy.I.Association0.AddReg  (tabletaudiosample.inf line 362)
+     inf:                                    {Install from INF Section - exit(0x00000000)} 12:19:16.328
+     inf:                                    {Install from INF Section - SYSVAD.I.WaveUsbHsSpeaker} 12:19:16.330
+     inf:                                         Flags         - 0x001005ee
+     inf:                                         Reference Key - 6
+     inf:                                         Source root   - (null)
+     inf:                                         Copy flags    - 0x001005ee
+     inf:                                         AddReg=SYSVAD.I.WaveUsbHsSpeaker.AddReg  (tabletaudiosample.inf line 374)
+     inf:                                    {Install from INF Section - exit(0x00000000)} 12:19:16.338
+     inf:                                    {Install from INF Section - SYSVAD.I.WaveUsbHsSpeaker} 12:19:16.340
+     inf:                                         Flags         - 0x001005ee
+     inf:                                         Reference Key - 6
+     inf:                                         Source root   - (null)
+     inf:                                         Copy flags    - 0x001005ee
+     inf:                                         AddReg=SYSVAD.I.WaveUsbHsSpeaker.AddReg  (tabletaudiosample.inf line 374)
+     inf:                                    {Install from INF Section - exit(0x00000000)} 12:19:16.348
+     inf:                                    {Install from INF Section - SYSVAD.I.WaveUsbHsSpeaker} 12:19:16.350
+     inf:                                         Flags         - 0x001005ee
+     inf:                                         Reference Key - 6
+     inf:                                         Source root   - (null)
+     inf:                                         Copy flags    - 0x001005ee
+     inf:                                         AddReg=SYSVAD.I.WaveUsbHsSpeaker.AddReg  (tabletaudiosample.inf line 374)
+     inf:                                    {Install from INF Section - exit(0x00000000)} 12:19:16.358
+     inf:                                    {Install from INF Section - SYSVAD.I.TopologyUsbHsSpeaker} 12:19:16.360
+     inf:                                         Flags         - 0x001005ee
+     inf:                                         Reference Key - 6
+     inf:                                         Source root   - (null)
+     inf:                                         Copy flags    - 0x001005ee
+     inf:                                         AddReg=SYSVAD.I.TopologyUsbHsSpeaker.AddReg  (tabletaudiosample.inf line 380)
+     inf:                                    {Install from INF Section - exit(0x00000000)} 12:19:16.370
+     inf:                                    {Install from INF Section - SYSVAD.I.TopologyUsbHsSpeaker} 12:19:16.372
+     inf:                                         Flags         - 0x001005ee
+     inf:                                         Reference Key - 6
+     inf:                                         Source root   - (null)
+     inf:                                         Copy flags    - 0x001005ee
+     inf:                                         AddReg=SYSVAD.I.TopologyUsbHsSpeaker.AddReg  (tabletaudiosample.inf line 380)
+     inf:                                    {Install from INF Section - exit(0x00000000)} 12:19:16.380
+     inf:                                    {Install from INF Section - SYSVAD.I.WaveUsbHsMic} 12:19:16.382
+     inf:                                         Flags         - 0x001005ee
+     inf:                                         Reference Key - 6
+     inf:                                         Source root   - (null)
+     inf:                                         Copy flags    - 0x001005ee
+     inf:                                         AddReg=SYSVAD.I.WaveUsbHsMic.AddReg  (tabletaudiosample.inf line 392)
+     inf:                                    {Install from INF Section - exit(0x00000000)} 12:19:16.390
+     inf:                                    {Install from INF Section - SYSVAD.I.WaveUsbHsMic} 12:19:16.392
+     inf:                                         Flags         - 0x001005ee
+     inf:                                         Reference Key - 6
+     inf:                                         Source root   - (null)
+     inf:                                         Copy flags    - 0x001005ee
+     inf:                                         AddReg=SYSVAD.I.WaveUsbHsMic.AddReg  (tabletaudiosample.inf line 392)
+     inf:                                    {Install from INF Section - exit(0x00000000)} 12:19:16.400
+     inf:                                    {Install from INF Section - SYSVAD.I.WaveUsbHsMic} 12:19:16.404
+     inf:                                         Flags         - 0x001005ee
+     inf:                                         Reference Key - 6
+     inf:                                         Source root   - (null)
+     inf:                                         Copy flags    - 0x001005ee
+     inf:                                         AddReg=SYSVAD.I.WaveUsbHsMic.AddReg  (tabletaudiosample.inf line 392)
+     inf:                                    {Install from INF Section - exit(0x00000000)} 12:19:16.412
+     inf:                                    {Install from INF Section - SYSVAD.I.TopologyUsbHsMic} 12:19:16.414
+     inf:                                         Flags         - 0x001005ee
+     inf:                                         Reference Key - 6
+     inf:                                         Source root   - (null)
+     inf:                                         Copy flags    - 0x001005ee
+     inf:                                         AddReg=SYSVAD.I.TopologyUsbHsMic.AddReg,MsApoFxProxy.I.Association0.AddReg  (tabletaudiosample.inf line 398)
+     inf:                                    {Install from INF Section - exit(0x00000000)} 12:19:16.424
+     inf:                                    {Install from INF Section - SYSVAD.I.TopologyUsbHsMic} 12:19:16.426
+     inf:                                         Flags         - 0x001005ee
+     inf:                                         Reference Key - 6
+     inf:                                         Source root   - (null)
+     inf:                                         Copy flags    - 0x001005ee
+     inf:                                         AddReg=SYSVAD.I.TopologyUsbHsMic.AddReg,MsApoFxProxy.I.Association0.AddReg  (tabletaudiosample.inf line 398)
+     inf:                                    {Install from INF Section - exit(0x00000000)} 12:19:16.434
+     dvi:                               {Install INTERFACES exit 00000000}
+     dvi:                          Default installer: Exit
+     dvi:                     {DIF_INSTALLINTERFACES - exit(0x00000000)} 12:19:16.440
+     dvi:                     {DIF_INSTALLDEVICE} 12:19:16.440
+     dvi:                          Class installer: Enter 12:19:16.442
+     dvi:                               {Install DEVICE}
+     inf:                                    Opened PNF: 'c:\windows\system32\driverstore\filerepository\tabletaudiosample.inf_amd64_bdc98f98d2ea6667\tabletaudiosample.inf' ([strings])
+     inf:                                    Opened PNF: 'C:\Windows\INF\ks.inf' ([strings.0409])
+     dvi:                                    Included ks.inf under [SYSVAD_SA.NT].
+     inf:                                    Opened PNF: 'C:\Windows\INF\wdmaudio.inf' ([strings.0409])
+     dvi:                                    Included wdmaudio.inf under [SYSVAD_SA.NT].
+     dvi:                                    Needs [KS.Registration] under [SYSVAD_SA.NT].
+     dvi:                                    Needs [WDMAUDIO.Registration] under [SYSVAD_SA.NT].
+     dvi:                                    Needs [MsApoFxProxy.Registration] under [SYSVAD_SA.NT].
+     dvi:                                    Writing BASIC Logical Configurations...
+     inf:                                    {Install Inf Section [SYSVAD_SA.NT]}
+     inf:                                         {Install from INF Section - SYSVAD_SA.NT} 12:19:16.464
+     inf:                                              Flags         - 0x00000001
+     inf:                                              Reference Key - 0
+     inf:                                              Source root   - (null)
+     inf:                                              Copy flags    - 0x00000001
+     inf:                                         {Install from INF Section - exit(0x00000000)} 12:19:16.472
+     inf:                                    {Install Inf Section [SYSVAD_SA.NT] exit (0x00000000)}
+     inf:                                    {Install Inf Section [KS.Registration]}
+     inf:                                         {Install from INF Section - KS.Registration} 12:19:16.476
+     inf:                                              Flags         - 0x00000001
+     inf:                                              Reference Key - 0
+     inf:                                              Source root   - (null)
+     inf:                                              Copy flags    - 0x00000001
+     inf:                                         {Install from INF Section - exit(0x00000000)} 12:19:16.482
+     inf:                                    {Install Inf Section [KS.Registration] exit (0x00000000)}
+     inf:                                    {Install Inf Section [WDMAUDIO.Registration]}
+     inf:                                         {Install from INF Section - WDMAUDIO.Registration} 12:19:16.486
+     inf:                                              Flags         - 0x00000001
+     inf:                                              Reference Key - 0
+     inf:                                              Source root   - (null)
+     inf:                                              Copy flags    - 0x00000001
+     inf:                                         {Install from INF Section - exit(0x00000000)} 12:19:16.492
+     inf:                                    {Install Inf Section [WDMAUDIO.Registration] exit (0x00000000)}
+     inf:                                    {Install Inf Section [MsApoFxProxy.Registration]}
+     inf:                                         {Install from INF Section - MsApoFxProxy.Registration} 12:19:16.496
+     inf:                                              Flags         - 0x00000001
+     inf:                                              Reference Key - 0
+     inf:                                              Source root   - (null)
+     inf:                                              Copy flags    - 0x00000001
+     inf:                                         {Install from INF Section - exit(0x00000000)} 12:19:16.504
+     inf:                                    {Install Inf Section [MsApoFxProxy.Registration] exit (0x00000000)}
+     dvi:                                    Processing Registry/Property directives...
+     inf:                                    {Install Inf Section [SYSVAD_SA.NT]}
+     inf:                                         {Install from INF Section - SYSVAD_SA.NT} 12:19:16.508
+     inf:                                              Flags         - 0x001005ee
+     inf:                                              Reference Key - 2
+     inf:                                              Source root   - (null)
+     inf:                                              Copy flags    - 0x001005ee
+     inf:                                              AddReg=SYSVAD_SA.AddReg,SWAPAPO.AddReg,KEYWORDDETECTORCONTOSOADAPTER.AddReg  (tabletaudiosample.inf line 442)
+     inf:                                         {Install from INF Section - exit(0x00000000)} 12:19:16.568
+     inf:                                    {Install Inf Section [SYSVAD_SA.NT] exit (0x00000000)}
+     inf:                                    {Install Inf Section [KS.Registration]}
+     inf:                                         {Install from INF Section - KS.Registration} 12:19:16.572
+     inf:                                              Flags         - 0x001005ee
+     inf:                                              Reference Key - 2
+     inf:                                              Source root   - (null)
+     inf:                                              Copy flags    - 0x001005ee
+     inf:                                              AddReg=TopologyNodeRegistration,PlugInRegistration,PinNameRegistration,DeviceRegistration,AudFNameRegistration  (ks.inf line 21)
+     inf:                                         {Install from INF Section - exit(0x00000000)} 12:19:16.738
+     inf:                                    {Install Inf Section [KS.Registration] exit (0x00000000)}
+     inf:                                    {Install Inf Section [WDMAUDIO.Registration]}
+     inf:                                         {Install from INF Section - WDMAUDIO.Registration} 12:19:16.742
+     inf:                                              Flags         - 0x001005ee
+     inf:                                              Reference Key - 2
+     inf:                                              Source root   - (null)
+     inf:                                              Copy flags    - 0x001005ee
+     inf:                                              AddReg=DeviceRegistration  (wdmaudio.inf line 117)
+     inf:                                         {Install from INF Section - exit(0x00000000)} 12:19:16.750
+     inf:                                    {Install Inf Section [WDMAUDIO.Registration] exit (0x00000000)}
+     inf:                                    {Install Inf Section [MsApoFxProxy.Registration]}
+     inf:                                         {Install from INF Section - MsApoFxProxy.Registration} 12:19:16.754
+     inf:                                              Flags         - 0x001005ee
+     inf:                                              Reference Key - 2
+     inf:                                              Source root   - (null)
+     inf:                                              Copy flags    - 0x001005ee
+     inf:                                              AddReg=MsApoFxProxy.AddReg  (wdmaudio.inf line 83)
+     inf:                                         {Install from INF Section - exit(0x00000000)} 12:19:16.772
+     inf:                                    {Install Inf Section [MsApoFxProxy.Registration] exit (0x00000000)}
+     inf:                                    {Install Inf Section [SYSVAD_SA.NT.Hw]}
+     inf:                                         {Install from INF Section - SYSVAD_SA.NT.Hw} 12:19:16.776
+     inf:                                              Flags         - 0x00100004
+     inf:                                              Reference Key - 1
+     inf:                                              Source root   - (null)
+     inf:                                              Copy flags    - 0x00100004
+     inf:                                              AddReg=AUDIOHW.AddReg  (tabletaudiosample.inf line 564)
+     inf:                                         {Install from INF Section - exit(0x00000000)} 12:19:16.786
+     inf:                                    {Install Inf Section [SYSVAD_SA.NT.Hw] exit (0x00000000)}
+     dvi:                                    {Writing Device Properties}
+     dvi:                                         Provider name=TODO-Set-Provider
+     dvi:                                         DriverDate 12/10/2018
+     dvi:                                         DriverVersion=11.54.1.636
+     dvi:                                         Manufacturer=TODO-Set-Manufacturer
+     dvi:                                         Matching DeviceID=root\sysvad_tabletaudiosample
+     dvi:                                         Strong Name=oem18.inf:ed86ca111a0c57ac:SYSVAD_SA:11.54.1.636:root\sysvad_tabletaudiosample
+     dvi:                                    {Writing Device Properties - Complete}
+     inf:                                    {Install Inf Section [SYSVAD_SA.NT.Services]}
+     inf:                                         AddService=sysvad_tabletaudiosample,0x00000002,sysvad_TabletAudioSample_Service_Inst  (tabletaudiosample.inf line 554)
+     inf:                                         ServiceType=1  (tabletaudiosample.inf line 558)
+     inf:                                         StartType=3  (tabletaudiosample.inf line 559)
+     inf:                                         ErrorControl=1  (tabletaudiosample.inf line 560)
+     inf:                                         ServiceBinary=C:\Windows\system32\DRIVERS\tabletaudiosample.sys  (tabletaudiosample.inf line 561)
+     inf:                                         DisplayName="Virtual Audio Device (WDM) - Tablet Sample Driver"  (tabletaudiosample.inf line 557)
+     dvi:                                         Add Service: Created service 'sysvad_tabletaudiosample'.
+     inf:                                         {Install from INF Section - sysvad_TabletAudioSample_Service_Inst} 12:19:16.826
+     inf:                                              Flags         - 0x00100004
+     inf:                                              Reference Key - 3
+     inf:                                              Source root   - (null)
+     inf:                                              Copy flags    - 0x00100004
+     inf:                                         {Install from INF Section - exit(0x00000000)} 12:19:16.832
+     inf:                                    {Install Inf Section [SYSVAD_SA.NT.Services] exit(0x00000000)}
+     dvi:                                    Updated active section names for: oem18.inf
+     dvi:                               {Install DEVICE exit (0x00000000)}
+     dvi:                               Writing common driver property settings.
+     dvi:                                    DriverDescription=Virtual Audio Device (WDM) - Tablet Sample
+     dvi:                                    DeviceDisplayName=Virtual Audio Device (WDM) - Tablet Sample
+     dvi:                               Configuring class schema driver settings for tabletaudiosample.inf [SYSVAD_SA].
+     inf:                               Opened PNF: 'c:\windows\system32\driverstore\filerepository\tabletaudiosample.inf_amd64_bdc98f98d2ea6667\tabletaudiosample.inf' ([strings])
+     sto:                               {Configure Driver Package: c:\windows\system32\driverstore\filerepository\tabletaudiosample.inf_amd64_bdc98f98d2ea6667\tabletaudiosample.inf}
+     sto:                                    Driver Package = tabletaudiosample.inf_amd64_bdc98f98d2ea6667
+     sto:                                    Flags          = 0x00110008
+     sto:                                    Source Filter  = SYSVAD_SA.NT
+     sto:                                    Target Filter  = ROOT\MEDIA\0001
+     inf:                                    Opened INF: 'c:\windows\system32\driverstore\filerepository\tabletaudiosample.inf_amd64_bdc98f98d2ea6667\tabletaudiosample.inf' ([strings])
+     inf:                                    Class GUID     = {4d36e96c-e325-11ce-bfc1-08002be10318}
+     inf:                                    Opened INF: 'c:\windows\system32\driverstore\filerepository\tabletaudiosample.inf_amd64_bdc98f98d2ea6667\tabletaudiosample.inf' ([strings])
+     idb:                                    Active configurations for 'oem18.inf':
+     idb:                                         SYSVAD_SA.NT
+     inf:                                    Driver section name filter:
+     inf:                                         SYSVAD_SA.NT
+     inf:                                    Device instance IDs:
+     inf:                                         ROOT\MEDIA\0001
+     inf:                                    {Configure Driver: Virtual Audio Device (WDM) - Tablet Sample}
+     inf:                                         Manufacturer = TODO-Set-Manufacturer
+     inf:                                         Section Name = SYSVAD_SA.NT
+     inf:                                         {Configure Device: ROOT\MEDIA\0001}
+     inf:                                         {Configure Device: exit(0x00000000)}
+     inf:                                    {Configure Driver: exit(0x00000000)}
+     sto:                                    Configured driver package. Time = 31 ms
+     sto:                               {Configure Driver Package: exit(0x00000000)}
+     dvi:                               Install Device: Configuring device class. 12:19:16.892
+     dvi:                               Install Device: Configuring device class completed. 12:19:16.894
+     dvi:                               Device Status: 0x01802001, Problem: 0x0 (0x00000000)
+     dvi:                               {Restarting Devices} 12:19:16.898
+     dvi:                                    Start: ROOT\MEDIA\0001
+     dvi:                                    Start complete.
+     dvi:                               {Restarting Devices exit} 12:19:17.014
+     dvi:                          Class installer: Exit
+     dvi:                     {DIF_INSTALLDEVICE - exit(0x00000000)} 12:19:17.026
+     inf:                     Opened PNF: 'C:\Windows\INF\ks.inf' ([strings.0409])
+     inf:                     {Install from INF Section - MSTEE.Interface.Install} 12:19:17.170
+     inf:                          Flags         - 0x000007fe
+     inf:                          Reference Key - 6
+     inf:                          Source root   - (null)
+     inf:                          Copy flags    - 0x000007fe
+     inf:                          AddReg=MSTEE.Interface.AddReg  (ks.inf line 26)
+     flq:                          {FILE_QUEUE_COMMIT} 12:19:17.180
+     flq:                               No operations queued.
+     flq:                          {FILE_QUEUE_COMMIT exit OK} 12:19:17.186
+     inf:                     {Install from INF Section - exit(0x00000000)} 12:19:17.188
+     inf:                     Opened PNF: 'C:\Windows\INF\ks.inf' ([strings.0409])
+     inf:                     {Install from INF Section - MSTEE.Interface.Install} 12:19:17.222
+     inf:                          Flags         - 0x000007fe
+     inf:                          Reference Key - 6
+     inf:                          Source root   - (null)
+     inf:                          Copy flags    - 0x000007fe
+     inf:                          AddReg=MSTEE.Interface.AddReg  (ks.inf line 26)
+     flq:                          {FILE_QUEUE_COMMIT} 12:19:17.232
+     flq:                               No operations queued.
+     flq:                          {FILE_QUEUE_COMMIT exit OK} 12:19:17.238
+     inf:                     {Install from INF Section - exit(0x00000000)} 12:19:17.240
+     inf:                     Opened PNF: 'C:\Windows\INF\WDMAUDIO.inf' ([strings.0409])
+     inf:                     {Install from INF Section - WDM_DRMKAUD.Interface.Install} 12:19:17.294
+     inf:                          Flags         - 0x000007fe
+     inf:                          Reference Key - 6
+     inf:                          Source root   - (null)
+     inf:                          Copy flags    - 0x000007fe
+     inf:                          AddReg=WDM_DRMKAUD.Interface.AddReg  (WDMAUDIO.inf line 132)
+     flq:                          {FILE_QUEUE_COMMIT} 12:19:17.308
+     flq:                               No operations queued.
+     flq:                          {FILE_QUEUE_COMMIT exit OK} 12:19:17.312
+     inf:                     {Install from INF Section - exit(0x00000000)} 12:19:17.314
+     dvi:                     {DIF_NEWDEVICEWIZARD_FINISHINSTALL} 12:19:17.316
+     dvi:                          Class installer: Enter 12:19:17.316
+     dvi:                          Class installer: Exit
+     dvi:                          Default installer: Enter 12:19:17.320
+     dvi:                          Default installer: Exit
+     dvi:                     {DIF_NEWDEVICEWIZARD_FINISHINSTALL - exit(0xe000020e)} 12:19:17.324
+     dvi:                     Device install status: 0x00000000
+     dvi:                     Performing device install final cleanup...
+     dvi:                {Install Device - exit(0x00000000)} 12:19:17.332
+     dvi:           {Core Device Install - exit(0x00000000)} 12:19:17.332
+     dvi:           {DIF_DESTROYPRIVATEDATA} 12:19:17.334
+     dvi:                Class installer: Enter 12:19:17.336
+     dvi:                Class installer: Exit
+     dvi:                Default installer: Enter 12:19:17.340
+     dvi:                Default installer: Exit
+     dvi:           {DIF_DESTROYPRIVATEDATA - exit(0xe000020e)} 12:19:17.344
+     ump:           Server install process exited with code 0x00000000 12:19:17.352
+     ump:      {Plug and Play Service: Device Install exit(00000000)}
+     dvi:      {DIF_DESTROYPRIVATEDATA} 12:19:17.440
+     dvi:           Class installer: Enter 12:19:17.450
+     dvi:           Class installer: Exit
+     dvi:           Default installer: Enter 12:19:17.470
+     dvi:           Default installer: Exit
+     dvi:      {DIF_DESTROYPRIVATEDATA - exit(0xe000020e)} 12:19:17.484
+     ndv: {Update Device Driver - exit(00000000)}
+     ndv: {Install Related Drivers} 12:19:17.502
+     ndv: {Install Related Drivers: exit(0x00000000)} 12:19:17.510
+<<<  Section end 2018/12/10 12:19:17.524
+<<<  [Exit status: SUCCESS]
+
